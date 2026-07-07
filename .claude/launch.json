@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "afdpm",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8123"],
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:/Users/Laetitia/Desktop/Au fil des Petites Mains/serve.ps1", "-Port", "8123"],
       "port": 8123
     }
   ]
