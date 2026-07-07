@@ -1,0 +1,88 @@
+---
+layout: base.njk
+permalink: contact.html
+nav_active: contact
+title: Contact | Au Fil des Petites Mains — Campagne, Dordogne
+description: "Contactez Au Fil des Petites Mains à Campagne (24260), Dordogne. Sur rendez-vous du lundi au samedi. Téléphone 06 07 77 38 86."
+---
+<section class="page-head">
+  <div class="container">
+    <span class="script">{{ contact.entete_script }}</span>
+    <h1>{{ contact.titre }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div class="contact-card">
+      <h2>{{ site.nom }}</h2>
+      <p><strong>{{ site.proprietaire }}</strong><br>
+      {{ site.adresse_ligne1 }}<br>
+      {{ site.adresse_ligne2 }}</p>
+      <p>✉ <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+      ☎ <a href="tel:{{ site.telephone_lien }}">{{ site.telephone }}</a></p>
+
+      <div class="box box--pink">
+        <h3 style="color:var(--raspberry)">Horaires d'ouverture</h3>
+        <p style="margin:2px 0"><em>{{ site.horaires_note }}.</em></p>
+        <p style="margin:2px 0">{{ site.horaires_semaine }}</p>
+        <p style="margin:2px 0">{{ site.horaires_samedi }}</p>
+      </div>
+
+      <p style="margin-top:16px">
+        <a href="{{ site.instagram }}" target="_blank" rel="noopener">Instagram</a> ·
+        <a href="{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a>
+      </p>
+    </div>
+
+    <div>
+      <h2>{{ contact.formulaire_titre }}</h2>
+      <!-- Formulaire propulsé par FormSubmit (aucune inscription requise).
+           Le premier envoi déclenche un e-mail de confirmation à activer une fois. -->
+      <form class="form" action="https://formsubmit.co/{{ site.email }}" method="POST">
+        <input type="hidden" name="_subject" value="Nouveau message depuis le site">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <div>
+          <label for="nom">Nom</label>
+          <input id="nom" type="text" name="Nom" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input id="email" type="email" name="E-mail" required>
+        </div>
+        <div>
+          <label for="tel">Téléphone</label>
+          <input id="tel" type="tel" name="Téléphone">
+        </div>
+        <div>
+          <label for="adresse">Adresse</label>
+          <input id="adresse" type="text" name="Adresse">
+        </div>
+        <div>
+          <label for="objet">Objet</label>
+          <input id="objet" type="text" name="Objet">
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" required></textarea>
+        </div>
+        <button class="btn" type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section section--pink">
+  <div class="container center">
+    <span class="script" style="font-size:1.7rem">{{ contact.carte_script }}</span>
+    <h2>{{ contact.carte_titre }}</h2>
+    <p class="lead" style="max-width:640px;margin:0 auto 26px">{{ contact.carte_texte }}</p>
+    <div class="box" style="padding:0;overflow:hidden">
+      <iframe
+        title="Carte — Campagne, Dordogne"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=0.90%2C44.85%2C0.99%2C44.91&layer=mapnik&marker=44.883%2C0.945"
+        style="width:100%;height:360px;border:0" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>

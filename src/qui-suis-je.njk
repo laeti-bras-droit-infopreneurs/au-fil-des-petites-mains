@@ -1,0 +1,33 @@
+---
+layout: base.njk
+permalink: qui-suis-je.html
+nav_active: qui-suis-je
+title: Qui suis-je ? | Au Fil des Petites Mains
+description: "Aurélia, couturière passionnée installée à Campagne en Périgord Noir depuis juillet 2022. Titulaire d'un CAP Métiers de la Mode, artisan et Répar-acteur labellisé."
+---
+<section class="page-head">
+  <div class="container">
+    <span class="script">{{ quisuisje.entete_script }}</span>
+    <h1>{{ quisuisje.titre }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:820px">
+    <h2>{{ quisuisje.intro_titre }}</h2>
+    {% for p in quisuisje.paragraphes %}
+    <p>{{ p }}</p>
+    {% endfor %}
+
+    <div class="box box--pink">
+      <h3>{{ quisuisje.engagements_titre }}</h3>
+      <ul class="info-list">
+        {% for e in quisuisje.engagements %}<li>{{ e }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <p>{{ quisuisje.conclusion }}</p>
+    <div style="margin-top:20px"><a class="btn" href="contact.html">Me contacter</a></div>
+  </div>
+</section>

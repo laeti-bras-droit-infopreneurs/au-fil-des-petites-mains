@@ -1,0 +1,46 @@
+---
+layout: base.njk
+permalink: broderie.html
+nav_active: broderie
+title: Broderies personnalisées | Au Fil des Petites Mains
+description: "Broderie numérique personnalisée en Dordogne : polos, t-shirts, casquettes, tabliers, serviettes. Pour les professionnels comme pour les particuliers, un cadeau unique et sur mesure."
+---
+<section class="page-head">
+  <div class="container">
+    <span class="script">{{ broderie.entete_script }}</span>
+    <h1>{{ broderie.titre }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split split--reverse">
+    <div class="split__img"><img src="{{ broderie.image }}" alt="{{ broderie.titre }}"></div>
+    <div>
+      <h2>{{ broderie.intro_titre }}</h2>
+      <p>{{ broderie.intro_texte1 }}</p>
+      <p>{{ broderie.intro_texte2 }}</p>
+      <ul class="info-list">
+        {% for p in broderie.prestations %}<li>{{ p }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--pink">
+  <div class="container">
+    <div class="center" style="margin-bottom:30px">
+      <span class="script" style="font-size:1.7rem">{{ broderie.tarifs_script }}</span>
+      <h2>{{ broderie.tarifs_titre }}</h2>
+    </div>
+    <div class="box">
+      <p>{{ broderie.tarifs_intro }}</p>
+      <ul class="info-list">
+        {% for t in broderie.tarifs %}<li>{{ t }}</li>
+        {% endfor %}
+      </ul>
+      <p>{{ broderie.tarifs_note }}</p>
+    </div>
+    <div class="center" style="margin-top:24px"><a class="btn" href="contact.html">Demander un devis</a></div>
+  </div>
+</section>

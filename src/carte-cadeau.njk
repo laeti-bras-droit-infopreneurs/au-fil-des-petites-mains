@@ -1,0 +1,29 @@
+---
+layout: base.njk
+permalink: carte-cadeau.html
+nav_active: carte-cadeau
+title: Carte cadeau | Au Fil des Petites Mains
+description: "Offrez une carte cadeau Au Fil des Petites Mains : retouches, broderies personnalisées ou cours de couture. Un cadeau original et local en Dordogne."
+---
+<section class="page-head">
+  <div class="container">
+    <span class="script">{{ cartecadeau.entete_script }}</span>
+    <h1>{{ cartecadeau.titre }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split__img"><img src="{{ cartecadeau.image }}" alt="{{ cartecadeau.titre }}"></div>
+    <div>
+      <h2>{{ cartecadeau.intro_titre }}</h2>
+      <p>{{ cartecadeau.intro_texte }}</p>
+      <ul class="info-list">
+        {% for p in cartecadeau.prestations %}<li>{{ p }}</li>
+        {% endfor %}
+      </ul>
+      <p>{{ cartecadeau.note }}</p>
+      <a class="btn" href="contact.html">Commander une carte cadeau</a>
+    </div>
+  </div>
+</section>

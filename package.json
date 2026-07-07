@@ -1,0 +1,13 @@
+{
+  "name": "au-fil-des-petites-mains",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine Au Fil des Petites Mains — Eleventy + Pages CMS",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

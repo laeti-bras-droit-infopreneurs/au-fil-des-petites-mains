@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mulish:wght@400;600;700;800&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Barre supérieure -->
+  <div class="topbar">
+    <div class="container">
+      <div class="infos">
+        <span>✉ <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
+        <span>☎ <a href="tel:{{ site.telephone_lien }}">{{ site.telephone }}</a></span>
+      </div>
+      <div class="socials">
+        <a href="{{ site.instagram }}" target="_blank" rel="noopener">Instagram</a>
+        <a href="{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- En-tête -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="{{ site.nom }}"></a>
+      <nav class="nav">
+        <label class="nav-toggle-label" for="nav-toggle">☰ Menu</label>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <ul>
+          <li><a href="index.html"{% if nav_active == "accueil" %} class="active"{% endif %}>Accueil</a></li>
+          <li><a href="broderie.html"{% if nav_active == "broderie" %} class="active"{% endif %}>Broderies</a></li>
+          <li><a href="retouches.html"{% if nav_active == "retouches" %} class="active"{% endif %}>Retouches</a></li>
+          <li><a href="cours.html"{% if nav_active == "cours" %} class="active"{% endif %}>Cours</a></li>
+          <li><a href="carte-cadeau.html"{% if nav_active == "carte-cadeau" %} class="active"{% endif %}>Carte cadeau</a></li>
+          <li><a href="qui-suis-je.html"{% if nav_active == "qui-suis-je" %} class="active"{% endif %}>Qui suis-je ?</a></li>
+          <li><a href="contact.html"{% if nav_active == "contact" %} class="active"{% endif %}>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  {{ content | safe }}
+
+  <!-- Pied de page -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>{{ site.nom }}</h4>
+          <p>{{ site.proprietaire }}<br>
+          {{ site.adresse_ligne1 }}<br>
+          {{ site.adresse_ligne2 }}</p>
+          <p>☎ <a href="tel:{{ site.telephone_lien }}">{{ site.telephone }}</a><br>
+          ✉ <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="broderie.html">Broderies</a></li>
+            <li><a href="retouches.html">Retouches</a></li>
+            <li><a href="cours.html">Cours</a></li>
+            <li><a href="carte-cadeau.html">Carte cadeau</a></li>
+            <li><a href="qui-suis-je.html">Qui suis-je ?</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="cgv.html">CGV</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+          </ul>
+          <p style="margin-top:14px">
+            <a href="{{ site.instagram }}" target="_blank" rel="noopener">Instagram</a> ·
+            <a href="{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">{{ site.copyright }}</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

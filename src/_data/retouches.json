@@ -1,0 +1,20 @@
+{
+  "entete_script": "Un service sur mesure",
+  "titre": "Retouches",
+  "image": "assets/img/retouches.jpg",
+  "intro_titre": "Redonnons vie à votre garde-robe",
+  "intro_texte1": "Je vous accompagne pour redonner vie à vos vêtements : transformer un vêtement abîmé, reprendre une pièce devenue trop grande après une perte de poids, réparer un accroc, faire un ourlet ou remplacer une fermeture éclair cassée.",
+  "intro_texte2": "Chaque retouche est unique. N'hésitez pas à venir m'exposer vos envies ; nous conviendrons ensemble d'un essayage lorsque cela est nécessaire.",
+  "prestations": [
+    "Ourlets (pantalons, jupes, robes, rideaux…)",
+    "Reprises et pinces, ajustement à votre morphologie",
+    "Réparations et accrocs",
+    "Pose et remplacement de fermetures éclair",
+    "Transformation et customisation de vêtements"
+  ],
+  "bonus_script": "Éco-responsable",
+  "bonus_titre": "Bénéficiez du Bonus Réparation",
+  "bonus_texte": "En tant que Répar-acteur labellisé, je vous permets de bénéficier du Bonus Réparation : une aide financière déduite directement de votre facture, pour prolonger la vie de vos vêtements tout en soutenant l'artisanat local.",
+  "atelier_titre": "L'atelier",
+  "atelier_texte": "Mon atelier se situe à Campagne. Appelez-moi pour convenir d'un rendez-vous : à bientôt !"
+}

@@ -1,0 +1,33 @@
+{
+  "hero_script": "Bienvenue",
+  "hero_titre": "Au Fil des Petites Mains",
+  "hero_texte": "Je suis Aurélia, installée depuis juillet 2022 dans mon atelier de couture à Campagne, en Dordogne (Périgord Noir). Je vous propose de la broderie numérique personnalisée pour vous ou votre entreprise, de la retouche de vêtements, ainsi que des ateliers et cours de couture.",
+  "hero_image": "assets/img/hero.jpg",
+  "services_script": "Mes savoir-faire",
+  "services_titre": "Ce que je vous propose",
+  "services": [
+    {
+      "titre": "Retouches",
+      "texte": "Ourlets, pinces, réparations, pose de fermetures éclair… Je redonne vie à vos vêtements avec un service sur mesure.",
+      "image": "assets/img/retouches.jpg",
+      "lien": "retouches.html"
+    },
+    {
+      "titre": "Broderies personnalisées",
+      "texte": "Broderie numérique sur mesure pour les entreprises, les événements ou pour offrir un cadeau unique et personnalisé.",
+      "image": "assets/img/broderie.jpg",
+      "lien": "broderie.html"
+    },
+    {
+      "titre": "Cours de couture",
+      "texte": "Des cours et ateliers de couture pour enfants, ados et adultes, adaptés à tous les niveaux, en groupe ou en individuel.",
+      "image": "assets/img/cours.jpg",
+      "lien": "cours.html"
+    }
+  ],
+  "agenda_script": "Agenda",
+  "agenda_titre": "Les cours de groupe",
+  "agenda_texte": "Les cours de couture en groupe reprennent en septembre. Les cours individuels, eux, se poursuivent tout l'été sur rendez-vous.",
+  "labels_titre": "Un savoir-faire artisanal et responsable",
+  "labels_texte": "Artisan reconnu, je suis également Répar-acteur labellisé : vous pouvez bénéficier du Bonus Réparation pour vos retouches, une aide éco-responsable qui soutient l'artisanat local."
+}

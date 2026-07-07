@@ -1,0 +1,23 @@
+{
+  "entete_script": "Un savoir-faire local",
+  "titre": "Broderies personnalisées",
+  "image": "assets/img/broderie.jpg",
+  "intro_titre": "La broderie numérique sur mesure",
+  "intro_texte1": "Vous souhaitez personnaliser les tenues de votre équipe, marquer un événement ou offrir un cadeau unique ? Je réalise vos broderies personnalisées, pour les professionnels comme pour les particuliers.",
+  "intro_texte2": "Je brode sur une grande variété d'articles : polos, t-shirts, casquettes, tabliers, serviettes… Un prénom, un logo ou un message : laissez parler vos envies.",
+  "prestations": [
+    "Broderie pour entreprises : logos, noms, tenues d'équipe",
+    "Broderie pour particuliers : cadeaux personnalisés, naissances, événements",
+    "Numérisation professionnelle de vos motifs et textes",
+    "Test réalisé sur un tissu similaire avant la broderie finale"
+  ],
+  "tarifs_script": "Tarifs",
+  "tarifs_titre": "Comment ça marche ?",
+  "tarifs_intro": "Le tarif d'une broderie dépend du nombre de couleurs et de la complexité du tissu. Voici les grands principes :",
+  "tarifs": [
+    "Numérisation du motif : de 2 € à 40 € selon la complexité (test inclus sur un tissu similaire).",
+    "Exemple : un prénom d'environ 5 à 20 cm de large revient à 5 € à 12 €, plus 2 € de numérisation.",
+    "Tarifs dégressifs à partir d'une certaine quantité."
+  ],
+  "tarifs_note": "Chaque projet étant unique, n'hésitez pas à me contacter pour établir un devis personnalisé et gratuit."
+}

@@ -1,0 +1,94 @@
+---
+layout: base.njk
+permalink: cours.html
+nav_active: cours
+title: Cours de couture | Au Fil des Petites Mains — Campagne, Dordogne
+description: "Cours et ateliers de couture à Campagne (à 8 min du Bugue) pour enfants, ados et adultes, tous niveaux. Cours de groupe et individuels, machine à coudre et surjeteuse."
+---
+<section class="page-head">
+  <div class="container">
+    <span class="script">{{ cours.entete_script }}</span>
+    <h1>{{ cours.titre }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split__img"><img src="{{ cours.image }}" alt="{{ cours.titre }}"></div>
+    <div>
+      <h2>{{ cours.intro_titre }}</h2>
+      <p>{{ cours.intro_texte }}</p>
+      <ul class="info-list">
+        {% for item in cours.intro_liste %}<li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      <p>{{ cours.intro_note }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--pink">
+  <div class="container">
+    <div class="center" style="margin-bottom:34px">
+      <span class="script" style="font-size:1.7rem">{{ cours.projets_script }}</span>
+      <h2>{{ cours.projets_titre }}</h2>
+    </div>
+    <div class="cards">
+      {% for p in cours.projets %}
+      <article class="card"><div class="card__body">
+        <h3>{{ p.titre }}</h3>
+        <p>{{ p.texte }}</p>
+      </div></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="center" style="margin-bottom:24px">
+      <span class="script" style="font-size:1.7rem">{{ cours.horaires_script }}</span>
+      <h2>{{ cours.horaires_titre }}</h2>
+    </div>
+    <div class="split">
+      <div class="box box--pink">
+        <h3>{{ cours.groupe_titre }}</h3>
+        <p>{{ cours.groupe_texte }}</p>
+        <p style="color:var(--muted)">{{ cours.groupe_note }}</p>
+      </div>
+      <div class="box box--pink">
+        <h3>{{ cours.individuel_titre }}</h3>
+        <p>{{ cours.individuel_texte }}</p>
+        <p style="color:var(--muted)">{{ cours.individuel_note }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="container">
+    <div class="center" style="margin-bottom:24px">
+      <h2>{{ cours.materiel_titre }}</h2>
+      <p class="lead" style="max-width:720px;margin:0 auto">{{ cours.materiel_note }}</p>
+    </div>
+    <div class="cards">
+      {% for m in cours.materiel %}
+      <article class="card"><div class="card__body">
+        <h3>{{ m.titre }}</h3>
+        <ul class="info-list">
+          {% for item in m.items %}<li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container center">
+    <h2>{{ cours.cta_titre }}</h2>
+    <p class="lead" style="max-width:640px;margin:0 auto 24px">{{ cours.cta_texte }}</p>
+    <a class="btn" href="contact.html">Réserver un cours</a>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+---
+layout: base.njk
+permalink: index.html
+nav_active: accueil
+title: Au Fil des Petites Mains | Couturière Le Bugue, Campagne, Siorac, Saint Cyprien
+description: "Entrez dans l'univers de la couture avec Au Fil des Petites Mains situé en Dordogne, entre Le Bugue, Saint Cyprien et Siorac. Retouches, broderies numériques personnalisées sur mesure pour professionnels ou particuliers, et cours de couture adaptés à tous les niveaux et âges."
+---
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__text">
+      <span class="script">{{ accueil.hero_script }}</span>
+      <h1>{{ accueil.hero_titre }}</h1>
+      <p class="lead">{{ accueil.hero_texte }}</p>
+      <div class="hero__actions">
+        <a class="btn" href="contact.html">Me contacter</a>
+        <a class="btn btn--ghost" href="#services">Mes services</a>
+      </div>
+    </div>
+    <div class="hero__img">
+      <img src="{{ accueil.hero_image }}" alt="{{ accueil.hero_titre }}">
+    </div>
+  </div>
+</section>
+
+<!-- Horaires -->
+<div class="hours">
+  <div class="container">
+    <h3>Horaires d'ouverture</h3>
+    <p>{{ site.horaires_semaine }} &nbsp;•&nbsp; {{ site.horaires_samedi }}</p>
+    <p class="rdv">{{ site.horaires_note }}</p>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="center" style="margin-bottom:44px">
+      <span class="script" style="font-size:1.8rem">{{ accueil.services_script }}</span>
+      <h2>{{ accueil.services_titre }}</h2>
+    </div>
+    <div class="cards">
+      {% for s in accueil.services %}
+      <article class="card">
+        <img src="{{ s.image }}" alt="{{ s.titre }}">
+        <div class="card__body">
+          <h3>{{ s.titre }}</h3>
+          <p>{{ s.texte }}</p>
+          <a class="btn" href="{{ s.lien }}">En savoir plus</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Agenda -->
+<section class="section section--pink">
+  <div class="container center">
+    <span class="script" style="font-size:1.8rem">{{ accueil.agenda_script }}</span>
+    <h2>{{ accueil.agenda_titre }}</h2>
+    <p class="lead" style="max-width:720px;margin:0 auto">{{ accueil.agenda_texte }}</p>
+    <div style="margin-top:26px"><a class="btn" href="cours.html">Découvrir les cours</a></div>
+  </div>
+</section>
+
+<!-- Labels -->
+<section class="section">
+  <div class="container center">
+    <h2>{{ accueil.labels_titre }}</h2>
+    <p class="lead" style="max-width:760px;margin:0 auto 34px">{{ accueil.labels_texte }}</p>
+    <div class="labels">
+      <img src="assets/img/label-artisan.png" alt="Label Artisan">
+      <img src="assets/img/label-bonus.png" alt="Bonus Réparation">
+      <img src="assets/img/label-reparacteur.png" alt="Réparateur labellisé Refashion">
+    </div>
+  </div>
+</section>

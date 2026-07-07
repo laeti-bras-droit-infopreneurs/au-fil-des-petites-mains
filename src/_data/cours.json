@@ -1,0 +1,68 @@
+{
+  "entete_script": "À Campagne, à 8 min du Bugue",
+  "titre": "Cours de couture",
+  "image": "assets/img/cours.jpg",
+  "intro_titre": "Apprendre à coudre, à votre rythme",
+  "intro_texte": "Je vous accompagne, adultes et enfants, dans l'apprentissage de la couture. Que vous soyez débutant ou déjà initié, les cours s'adaptent à votre niveau et à vos envies.",
+  "intro_liste": [
+    "Aide sur votre projet personnel (accessoire ou vêtement)",
+    "Apprentissage individuel de la machine à coudre ou de la surjeteuse",
+    "Projets guidés, tutoriels fournis"
+  ],
+  "intro_note": "Le matériel (ciseaux, règles, machines) peut être prêté sur place. Pensez à arriver 5 minutes en avance !",
+  "projets_script": "Pour débuter",
+  "projets_titre": "Trois projets au choix",
+  "projets": [
+    {
+      "titre": "Le tote bag",
+      "texte": "Un sac en toile non doublé, idéal pour un premier projet et se familiariser avec la machine."
+    },
+    {
+      "titre": "La pochette à boutons",
+      "texte": "Une petite pochette pratique, fermée par des boutons-pression, pour apprendre les finitions."
+    },
+    {
+      "titre": "La housse de coussin",
+      "texte": "Une housse de coussin portefeuille, pour maîtriser les mesures et les ourlets."
+    }
+  ],
+  "horaires_script": "Horaires",
+  "horaires_titre": "Quand ont lieu les cours ?",
+  "groupe_titre": "Cours de groupe",
+  "groupe_texte": "Deux samedis matin par mois, de 9h à 12h. Le mardi soir, de 18h à 19h30.",
+  "groupe_note": "Les cours de groupe reprennent en septembre.",
+  "individuel_titre": "Cours individuels",
+  "individuel_texte": "Sur rendez-vous, selon vos disponibilités.",
+  "individuel_note": "Les cours individuels se poursuivent tout l'été.",
+  "materiel_titre": "Le matériel à prévoir",
+  "materiel_note": "Pensez à pré-laver vos tissus pour éviter qu'ils ne rétrécissent après votre projet.",
+  "materiel": [
+    {
+      "titre": "Pochette à boutons",
+      "items": [
+        "2 boutons-pression",
+        "Tissu principal 25 × 40 cm",
+        "Doublure assortie",
+        "Entoilage optionnel (150 à 350 g/m²)"
+      ]
+    },
+    {
+      "titre": "Tote bag",
+      "items": [
+        "Tissu de 200 à 400 g/m²",
+        "Sangles / anses",
+        "Dimensions selon vos envies"
+      ]
+    },
+    {
+      "titre": "Housse de coussin",
+      "items": [
+        "Popeline, coton ou jacquard (150 à 300 g/m²)",
+        "1 pièce avant de 46 × 46 cm minimum",
+        "2 rectangles arrière de 32 × 46 cm"
+      ]
+    }
+  ],
+  "cta_titre": "Envie de vous lancer ?",
+  "cta_texte": "Contactez-moi pour connaître les disponibilités et réserver votre place."
+}

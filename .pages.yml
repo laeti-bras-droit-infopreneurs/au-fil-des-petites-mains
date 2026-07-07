@@ -1,0 +1,189 @@
+media:
+  input: src/assets/img
+  output: assets/img
+
+content:
+  - name: infos
+    label: "⚙️ Coordonnées & horaires"
+    description: "Coordonnées, horaires et réseaux sociaux affichés sur tout le site."
+    type: file
+    path: src/_data/site.json
+    fields:
+      - { name: nom, label: "Nom de l'entreprise", type: string }
+      - { name: proprietaire, label: "Nom de la propriétaire", type: string }
+      - { name: email, label: "E-mail", type: string }
+      - { name: telephone, label: "Téléphone (affiché)", type: string }
+      - { name: telephone_lien, label: "Téléphone (format international, ex. +33607773886)", type: string }
+      - { name: adresse_ligne1, label: "Adresse — ligne 1", type: string }
+      - { name: adresse_ligne2, label: "Adresse — ligne 2 (code postal, ville)", type: string }
+      - { name: instagram, label: "Lien Instagram", type: string }
+      - { name: facebook, label: "Lien Facebook", type: string }
+      - { name: horaires_semaine, label: "Horaires en semaine", type: string }
+      - { name: horaires_samedi, label: "Horaires le samedi", type: string }
+      - { name: horaires_note, label: "Note horaires (ex. sur rendez-vous)", type: string }
+      - { name: copyright, label: "Ligne de copyright (pied de page)", type: string }
+
+  - name: accueil
+    label: "🏠 Page Accueil"
+    type: file
+    path: src/_data/accueil.json
+    fields:
+      - { name: hero_script, label: "Petit mot d'introduction (calligraphie)", type: string }
+      - { name: hero_titre, label: "Grand titre", type: string }
+      - { name: hero_texte, label: "Texte de présentation", type: text }
+      - { name: hero_image, label: "Image principale", type: image }
+      - { name: services_script, label: "Section services — mot calligraphié", type: string }
+      - { name: services_titre, label: "Section services — titre", type: string }
+      - name: services
+        label: "Les 3 services"
+        type: object
+        list: true
+        fields:
+          - { name: titre, label: "Titre", type: string }
+          - { name: texte, label: "Texte", type: text }
+          - { name: image, label: "Photo", type: image }
+          - { name: lien, label: "Page liée (ex. retouches.html)", type: string }
+      - { name: agenda_script, label: "Agenda — mot calligraphié", type: string }
+      - { name: agenda_titre, label: "Agenda — titre", type: string }
+      - { name: agenda_texte, label: "Agenda — texte (reprise des cours…)", type: text }
+      - { name: labels_titre, label: "Section labels — titre", type: string }
+      - { name: labels_texte, label: "Section labels — texte", type: text }
+
+  - name: retouches
+    label: "🧵 Page Retouches"
+    type: file
+    path: src/_data/retouches.json
+    fields:
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
+      - { name: titre, label: "Titre de la page", type: string }
+      - { name: image, label: "Photo", type: image }
+      - { name: intro_titre, label: "Titre d'introduction", type: string }
+      - { name: intro_texte1, label: "Paragraphe 1", type: text }
+      - { name: intro_texte2, label: "Paragraphe 2", type: text }
+      - { name: prestations, label: "Liste des prestations", type: string, list: true }
+      - { name: bonus_script, label: "Bonus Réparation — mot calligraphié", type: string }
+      - { name: bonus_titre, label: "Bonus Réparation — titre", type: string }
+      - { name: bonus_texte, label: "Bonus Réparation — texte", type: text }
+      - { name: atelier_titre, label: "Atelier — titre", type: string }
+      - { name: atelier_texte, label: "Atelier — texte", type: text }
+
+  - name: broderie
+    label: "🪡 Page Broderies"
+    type: file
+    path: src/_data/broderie.json
+    fields:
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
+      - { name: titre, label: "Titre de la page", type: string }
+      - { name: image, label: "Photo", type: image }
+      - { name: intro_titre, label: "Titre d'introduction", type: string }
+      - { name: intro_texte1, label: "Paragraphe 1", type: text }
+      - { name: intro_texte2, label: "Paragraphe 2", type: text }
+      - { name: prestations, label: "Liste des prestations", type: string, list: true }
+      - { name: tarifs_script, label: "Tarifs — mot calligraphié", type: string }
+      - { name: tarifs_titre, label: "Tarifs — titre", type: string }
+      - { name: tarifs_intro, label: "Tarifs — phrase d'introduction", type: text }
+      - { name: tarifs, label: "Tarifs — liste des principes", type: string, list: true }
+      - { name: tarifs_note, label: "Tarifs — note de conclusion", type: text }
+
+  - name: cours
+    label: "✂️ Page Cours"
+    type: file
+    path: src/_data/cours.json
+    fields:
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
+      - { name: titre, label: "Titre de la page", type: string }
+      - { name: image, label: "Photo", type: image }
+      - { name: intro_titre, label: "Titre d'introduction", type: string }
+      - { name: intro_texte, label: "Texte d'introduction", type: text }
+      - { name: intro_liste, label: "Ce que proposent les cours (liste)", type: string, list: true }
+      - { name: intro_note, label: "Note (matériel prêté, ponctualité…)", type: text }
+      - { name: projets_script, label: "Projets — mot calligraphié", type: string }
+      - { name: projets_titre, label: "Projets — titre", type: string }
+      - name: projets
+        label: "Les projets pour débuter"
+        type: object
+        list: true
+        fields:
+          - { name: titre, label: "Titre", type: string }
+          - { name: texte, label: "Description", type: text }
+      - { name: horaires_script, label: "Horaires — mot calligraphié", type: string }
+      - { name: horaires_titre, label: "Horaires — titre", type: string }
+      - { name: groupe_titre, label: "Cours de groupe — titre", type: string }
+      - { name: groupe_texte, label: "Cours de groupe — horaires", type: text }
+      - { name: groupe_note, label: "Cours de groupe — note (reprise…)", type: string }
+      - { name: individuel_titre, label: "Cours individuels — titre", type: string }
+      - { name: individuel_texte, label: "Cours individuels — texte", type: text }
+      - { name: individuel_note, label: "Cours individuels — note", type: string }
+      - { name: materiel_titre, label: "Matériel — titre", type: string }
+      - { name: materiel_note, label: "Matériel — conseil (pré-lavage…)", type: text }
+      - name: materiel
+        label: "Matériel par projet"
+        type: object
+        list: true
+        fields:
+          - { name: titre, label: "Projet", type: string }
+          - { name: items, label: "Fournitures", type: string, list: true }
+      - { name: cta_titre, label: "Encart final — titre", type: string }
+      - { name: cta_texte, label: "Encart final — texte", type: text }
+
+  - name: cartecadeau
+    label: "🎁 Page Carte cadeau"
+    type: file
+    path: src/_data/cartecadeau.json
+    fields:
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
+      - { name: titre, label: "Titre de la page", type: string }
+      - { name: image, label: "Photo", type: image }
+      - { name: intro_titre, label: "Titre d'introduction", type: string }
+      - { name: intro_texte, label: "Texte d'introduction", type: text }
+      - { name: prestations, label: "Prestations possibles (liste)", type: string, list: true }
+      - { name: note, label: "Note (montant libre…)", type: text }
+
+  - name: quisuisje
+    label: "👋 Page Qui suis-je ?"
+    type: file
+    path: src/_data/quisuisje.json
+    fields:
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
+      - { name: titre, label: "Titre de la page", type: string }
+      - { name: intro_titre, label: "Titre d'introduction", type: string }
+      - { name: paragraphes, label: "Mon histoire (paragraphes)", type: text, list: true }
+      - { name: engagements_titre, label: "Engagements — titre", type: string }
+      - { name: engagements, label: "Engagements & affiliations (liste)", type: string, list: true }
+      - { name: conclusion, label: "Phrase de conclusion", type: text }
+
+  - name: contact
+    label: "📮 Page Contact"
+    type: file
+    path: src/_data/contact.json
+    fields:
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
+      - { name: titre, label: "Titre de la page", type: string }
+      - { name: formulaire_titre, label: "Titre du formulaire", type: string }
+      - { name: carte_script, label: "Carte — mot calligraphié", type: string }
+      - { name: carte_titre, label: "Carte — titre", type: string }
+      - { name: carte_texte, label: "Carte — texte (adresse, accès)", type: text }
+
+  - name: cgv
+    label: "📄 CGV"
+    type: file
+    path: src/cgv.md
+    fields:
+      - { name: titre, label: "Titre affiché", type: string }
+      - { name: body, label: "Contenu", type: rich-text }
+
+  - name: mentions
+    label: "📄 Mentions légales"
+    type: file
+    path: src/mentions-legales.md
+    fields:
+      - { name: titre, label: "Titre affiché", type: string }
+      - { name: body, label: "Contenu", type: rich-text }
+
+  - name: confidentialite
+    label: "📄 Politique de confidentialité"
+    type: file
+    path: src/confidentialite.md
+    fields:
+      - { name: titre, label: "Titre affiché", type: string }
+      - { name: body, label: "Contenu", type: rich-text }

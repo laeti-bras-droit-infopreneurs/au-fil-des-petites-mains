@@ -1,0 +1,13 @@
+{
+  "entete_script": "Faites plaisir",
+  "titre": "Carte cadeau",
+  "image": "assets/img/cours.jpg",
+  "intro_titre": "Un cadeau unique et local",
+  "intro_texte": "Envie de faire plaisir ? Offrez une carte cadeau Au Fil des Petites Mains ! Le·la bénéficiaire choisira la prestation qui lui fait envie :",
+  "prestations": [
+    "Un cours ou un atelier de couture",
+    "Une broderie personnalisée",
+    "Des retouches sur mesure"
+  ],
+  "note": "La carte cadeau est disponible pour le montant de votre choix. Contactez-moi pour la commander et la personnaliser."
+}
