@@ -16,5 +16,28 @@
   "bonus_titre": "Bénéficiez du Bonus Réparation",
   "bonus_texte": "En tant que Répar-acteur labellisé, je vous permets de bénéficier du Bonus Réparation : une aide financière déduite directement de votre facture, pour prolonger la vie de vos vêtements tout en soutenant l'artisanat local.",
   "atelier_titre": "L'atelier",
-  "atelier_texte": "Mon atelier se situe à Campagne. Appelez-moi pour convenir d'un rendez-vous : à bientôt !"
+  "atelier_texte": "Mon atelier se situe à Campagne. Appelez-moi pour convenir d'un rendez-vous : à bientôt !",
+  "tarifs_script": "Mes tarifs",
+  "tarifs_titre": "Grille tarifaire",
+  "tarifs_note": "Tarifs indicatifs, donnés à titre d'information. Chaque pièce étant unique, un devis précis vous est confirmé lors de votre passage à l'atelier.",
+  "tarifs": [
+    { "prestation": "Ourlet simple de pantalon", "tarif": "10 €" },
+    { "prestation": "Ourlet pantalon (fente, revers etc...)", "tarif": "14 €" },
+    { "prestation": "Ourlet pantalon large", "tarif": "12 €" },
+    { "prestation": "Ourlet invisible (à la main) de pantalon", "tarif": "15 €" },
+    { "prestation": "Ourlet simple de jupe / robe, non doublée", "tarif": "20 €" },
+    { "prestation": "Ourlet large ++ non doublé, jupe / robe", "tarif": "30 €" },
+    { "prestation": "Ourlet de jupe / robe avec doublure", "tarif": "30 €" },
+    { "prestation": "Ourlet de jupe / robe large doublée", "tarif": "35 €" },
+    { "prestation": "Reprise taille simple", "tarif": "20 €" },
+    { "prestation": "Reprise taille doublée", "tarif": "25 €" },
+    { "prestation": "Changement de fermeture éclair pantalon, hors fourniture", "tarif": "18 €" },
+    { "prestation": "Pose 1 bouton, hors fourniture", "tarif": "3 €" },
+    { "prestation": "Changement fermeture éclair manteau doublé - de 50 cm, hors fourniture", "tarif": "45 €" },
+    { "prestation": "Changement fermeture éclair manteau non doublé - 50 cm, hors fourniture", "tarif": "33 €" },
+    { "prestation": "Changement fermeture éclair manteau doublé + de 50 cm, hors fourniture", "tarif": "50 €" },
+    { "prestation": "Changement fermeture éclair manteau + 50 cm, hors fourniture", "tarif": "38 €" },
+    { "prestation": "Ourlet simple de rideaux (au mètre linéaire)", "tarif": "10 €" },
+    { "prestation": "Travail à la carte : tarif horaire", "tarif": "30 €" }
+  ]
 }

@@ -66,6 +66,17 @@ content:
       - { name: bonus_texte, label: "Bonus Réparation — texte", type: text }
       - { name: atelier_titre, label: "Atelier — titre", type: string }
       - { name: atelier_texte, label: "Atelier — texte", type: text }
+      - { name: tarifs_script, label: "Tarifs — mot calligraphié", type: string }
+      - { name: tarifs_titre, label: "Tarifs — titre du tableau", type: string }
+      - name: tarifs
+        label: "Tableau des tarifs"
+        description: "Chaque ligne du tableau. Utilise la poignée à gauche pour réordonner, le + pour ajouter une prestation."
+        type: object
+        list: true
+        fields:
+          - { name: prestation, label: "Prestation", type: string }
+          - { name: tarif, label: "Tarif (ex. 10 €)", type: string }
+      - { name: tarifs_note, label: "Tarifs — note sous le tableau", type: text }
 
   - name: broderie
     label: "🪡 Page Broderies"

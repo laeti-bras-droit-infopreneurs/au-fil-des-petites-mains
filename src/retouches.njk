@@ -28,6 +28,45 @@ description: "Un service de retouches sur mesure à Campagne (Dordogne) : ourlet
   </div>
 </section>
 
+<section class="section section--cream">
+  <div class="container">
+    <div class="center" style="margin-bottom:30px">
+      <span class="script" style="font-size:1.7rem">{{ retouches.tarifs_script }}</span>
+      <h2>{{ retouches.tarifs_titre }}</h2>
+    </div>
+
+    <div class="tarifs" data-tarifs>
+      <div class="tarifs__search">
+        <label class="sr-only" for="recherche-tarifs">Rechercher une prestation</label>
+        <input id="recherche-tarifs" type="search" placeholder="Rechercher…" data-tarifs-search autocomplete="off">
+      </div>
+      <div class="tarifs__scroll">
+        <table class="tarifs__table">
+          <thead>
+            <tr>
+              <th scope="col">Prestations</th>
+              <th scope="col" class="tarifs__col-prix">Tarifs</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for ligne in retouches.tarifs %}
+            <tr>
+              <td>{{ ligne.prestation }}</td>
+              <td class="tarifs__col-prix">{{ ligne.tarif }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="tarifs__vide" data-tarifs-empty hidden>Aucune prestation ne correspond à votre recherche.</p>
+    </div>
+
+    {% if retouches.tarifs_note %}
+    <p class="center" style="max-width:720px;margin:22px auto 0;color:var(--muted);font-size:.95rem">{{ retouches.tarifs_note }}</p>
+    {% endif %}
+  </div>
+</section>
+
 <section class="section section--pink">
   <div class="container center">
     <span class="script" style="font-size:1.7rem">{{ retouches.bonus_script }}</span>
