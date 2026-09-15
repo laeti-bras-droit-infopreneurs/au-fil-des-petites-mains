@@ -43,8 +43,9 @@ npm run build    # génère le site dans _site/
 
 ## Formulaire de contact
 
-Le formulaire utilise [FormSubmit](https://formsubmit.co/). Au premier envoi, un e-mail de
-confirmation est envoyé à l'adresse configurée (à valider une seule fois).
+Le formulaire est un [Tally](https://tally.so/) intégré (formulaire `q49qb8`).
+Les messages reçus se consultent et se paramètrent depuis le compte Tally
+(notifications par e-mail incluses).
 
 > Note : reproduction indépendante du site original réalisée à des fins personnelles.
 > Le contenu, le logo et les photographies appartiennent à Au Fil des Petites Mains.
