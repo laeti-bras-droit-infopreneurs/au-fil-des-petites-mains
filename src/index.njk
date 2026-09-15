@@ -9,16 +9,18 @@ description: "Entrez dans l'univers de la couture avec Au Fil des Petites Mains 
 <section class="hero">
   <div class="container">
     <div class="hero__text">
-      <span class="script">{{ accueil.hero_script }}</span>
       <h1>{{ accueil.hero_titre }}</h1>
-      <p class="lead">{{ accueil.hero_texte }}</p>
+      <span class="script hero__accroche">{{ accueil.hero_script }}</span>
+      <p class="lead">{{ accueil.hero_texte1 }}</p>
+      <p class="lead">{{ accueil.hero_texte2 }}</p>
+      <p class="lead">{{ accueil.hero_texte3 }}</p>
       <div class="hero__actions">
         <a class="btn" href="contact.html">Me contacter</a>
         <a class="btn btn--ghost" href="#services">Mes services</a>
       </div>
     </div>
     <div class="hero__img">
-      <img src="{{ accueil.hero_image }}" alt="{{ accueil.hero_titre }}">
+      <img src="{{ accueil.hero_image }}" alt="Atelier de couture Au Fil des Petites Mains à Campagne, Dordogne">
     </div>
   </div>
 </section>
@@ -27,8 +29,8 @@ description: "Entrez dans l'univers de la couture avec Au Fil des Petites Mains 
 <div class="hours">
   <div class="container">
     <h3>Horaires d'ouverture</h3>
-    <p>{{ site.horaires_semaine }} &nbsp;•&nbsp; {{ site.horaires_samedi }}</p>
     <p class="rdv">{{ site.horaires_note }}</p>
+    <p>{{ site.horaires_semaine }} &nbsp;•&nbsp; {{ site.horaires_samedi }}</p>
   </div>
 </div>
 
@@ -36,19 +38,16 @@ description: "Entrez dans l'univers de la couture avec Au Fil des Petites Mains 
 <section class="section" id="services">
   <div class="container">
     <div class="center" style="margin-bottom:44px">
-      <span class="script" style="font-size:1.8rem">{{ accueil.services_script }}</span>
       <h2>{{ accueil.services_titre }}</h2>
     </div>
     <div class="cards">
       {% for s in accueil.services %}
-      <article class="card">
+      <a class="card card--lien" href="{{ s.lien }}">
         <img src="{{ s.image }}" alt="{{ s.titre }}">
         <div class="card__body">
-          <h3>{{ s.titre }}</h3>
-          <p>{{ s.texte }}</p>
-          <a class="btn" href="{{ s.lien }}">En savoir plus</a>
+          <h3 class="card__titre">{{ s.titre }}</h3>
         </div>
-      </article>
+      </a>
       {% endfor %}
     </div>
   </div>
@@ -56,11 +55,24 @@ description: "Entrez dans l'univers de la couture avec Au Fil des Petites Mains 
 
 <!-- Agenda -->
 <section class="section section--pink">
-  <div class="container center">
-    <span class="script" style="font-size:1.8rem">{{ accueil.agenda_script }}</span>
-    <h2>{{ accueil.agenda_titre }}</h2>
-    <p class="lead" style="max-width:720px;margin:0 auto">{{ accueil.agenda_texte }}</p>
-    <div style="margin-top:26px"><a class="btn" href="cours.html">Découvrir les cours</a></div>
+  <div class="container">
+    <h2 class="titre-orne">{{ accueil.agenda_titre }}</h2>
+    <div class="agenda">
+      {% if accueil.agenda_image %}
+      <div class="agenda__img">
+        <img src="{{ accueil.agenda_image }}" alt="Affiche des cours de couture à Campagne">
+      </div>
+      {% endif %}
+      <div class="agenda__texte">
+        {% for ligne in accueil.agenda_lignes %}
+        <p class="agenda__ligne{% if ligne.souligne %} agenda__ligne--fort{% endif %}">{{ ligne.texte }}</p>
+        {% endfor %}
+        {% if accueil.agenda_note %}
+        <p class="agenda__note">{{ accueil.agenda_note }}</p>
+        {% endif %}
+        <a class="btn" href="cours.html">Découvrir les cours</a>
+      </div>
+    </div>
   </div>
 </section>
 

@@ -1,17 +1,27 @@
 {
   "entete_script": "Faisons connaissance",
   "titre": "Qui suis-je ?",
+  "image": "assets/img/aurelia-bordier.avif",
   "intro_titre": "Qui se cache derrière Au Fil des Petites Mains ?",
   "paragraphes": [
-    "Passionnée par les animaux depuis toujours, j'ai travaillé pendant plus de 16 ans comme auxiliaire vétérinaire. En parallèle, j'ai développé un véritable goût pour le travail manuel et la couture, transmis par ma maman : ancienne couturière industrielle à Bordeaux, elle gardait sa machine à coudre sur la table de la salle à manger.",
-    "En 2014, à 32 ans, j'ai redécouvert la couture grâce à la machine de ma mère et j'y ai trouvé un immense épanouissement. Après la naissance de mes enfants, l'envie de professionnaliser mon savoir-faire s'est imposée. J'ai obtenu mon CAP Métiers de la Mode en juin 2022, puis lancé mon activité en juillet 2022 à Campagne, en Périgord Noir."
+    "Depuis toute petite, je suis une passionnée de chiens ; c'est ainsi que je suis devenue Assistante Spécialisée Vétérinaire, métier que j'ai exercé pendant plus de 16 ans.",
+    "Mais quand j'étais enfant, j'aimais déjà beaucoup travailler de mes mains (dessin, home déco, pâte polymère, scrapbooking, poterie, pâtisserie, etc.) et ma maman, ancienne couturière industrielle dans le Bordeaux de l'époque, avait toujours sa machine à coudre sur la table de la salle à manger. Toujours quelque chose à recoudre, un pantalon fluide à faire pour ses filles, une jupe droite à réaliser pour elle…",
+    "Une boîte avec des boutons incroyables de toutes sortes, de toutes tailles, trônait toujours à côté de sa machine. J'aimais tellement y enfoncer mes doigts !"
   ],
-  "engagements_titre": "Mes engagements & affiliations",
+  "citation": "Bref, mon éveil à la couture a commencé là. Merci maman !",
+  "paragraphes_suite": [
+    "Mais c'est bien des années plus tard, en 2014, à 32 ans, que je fais rejaillir ces souvenirs. Après avoir cousu quelques créations à la main, ma maman me donne sa machine à coudre, et je laisse libre cours aux fils et aux aiguilles. J'en sors un épanouissement incroyable. Les heures filent et le plaisir double, triple !",
+    "Depuis, ma fille est née, et la voir vêtue de mes tenues me rendait tellement fière ! L'arrivée de son petit frère a conforté ce désir de continuer.",
+    "Et c'est en 2021, avec énormément de plaisir, de satisfaction et une motivation à toute épreuve, que je passais définitivement le cap de la reconversion professionnelle en passant le CAP Métiers de la Mode Vêtements Flous, obtenu en juin 2022.",
+    "J'ouvre à la suite, en juillet 2022, ma petite entreprise Au Fil des Petites Mains, située sur la jolie commune de Campagne dans le Périgord Noir (24).",
+    "Depuis, j'ai une constante envie d'apprendre et suis régulièrement en formation pour toujours mieux vous satisfaire."
+  ],
+  "signature": "Aurélia",
+  "engagements_titre": "Mes engagements",
   "engagements": [
-    "Membre des « Artisans de l'Autonomie » (Chambre de Métiers et de l'Artisanat)",
+    "Artisane de l'autonomie avec la Chambre des Métiers et de l'Artisanat",
     "Membre de l'UNACAC",
-    "Intervenue sur les ondes de France Bleu Périgord",
-    "Répar-acteur labellisé — Bonus Réparation"
-  ],
-  "conclusion": "Mon atelier se situe à côté de mon domicile, à Campagne. C'est avec plaisir que je vous y accueille sur rendez-vous !"
+    "Mon passage sur France Bleu Périgord",
+    "Mon atelier couture juste à côté de mon domicile. J'ai le plaisir de vous y accueillir !"
+  ]
 }

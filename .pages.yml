@@ -20,7 +20,7 @@ content:
       - { name: facebook, label: "Lien Facebook", type: string }
       - { name: horaires_semaine, label: "Horaires en semaine", type: string }
       - { name: horaires_samedi, label: "Horaires le samedi", type: string }
-      - { name: horaires_note, label: "Note horaires (ex. sur rendez-vous)", type: string }
+      - { name: horaires_note, label: "Note horaires (ex. uniquement sur RDV)", type: string }
       - { name: copyright, label: "Ligne de copyright (pied de page)", type: string }
 
   - name: accueil
@@ -28,24 +28,32 @@ content:
     type: file
     path: src/_data/accueil.json
     fields:
-      - { name: hero_script, label: "Petit mot d'introduction (calligraphie)", type: string }
       - { name: hero_titre, label: "Grand titre", type: string }
-      - { name: hero_texte, label: "Texte de présentation", type: text }
-      - { name: hero_image, label: "Image principale", type: image }
-      - { name: services_script, label: "Section services — mot calligraphié", type: string }
+      - { name: hero_script, label: "Accroche calligraphiée (ex. Artisane Couturière à Campagne)", type: string }
+      - { name: hero_texte1, label: "Présentation — paragraphe 1", type: text }
+      - { name: hero_texte2, label: "Présentation — paragraphe 2", type: text }
+      - { name: hero_texte3, label: "Présentation — paragraphe 3", type: text }
+      - { name: hero_image, label: "Photo principale", type: image }
       - { name: services_titre, label: "Section services — titre", type: string }
       - name: services
-        label: "Les 3 services"
+        label: "Les 3 services (cartes cliquables)"
         type: object
         list: true
         fields:
           - { name: titre, label: "Titre", type: string }
-          - { name: texte, label: "Texte", type: text }
           - { name: image, label: "Photo", type: image }
           - { name: lien, label: "Page liée (ex. retouches.html)", type: string }
-      - { name: agenda_script, label: "Agenda — mot calligraphié", type: string }
       - { name: agenda_titre, label: "Agenda — titre", type: string }
-      - { name: agenda_texte, label: "Agenda — texte (reprise des cours…)", type: text }
+      - { name: agenda_image, label: "Agenda — affiche / visuel", type: image }
+      - name: agenda_lignes
+        label: "Agenda — lignes de dates"
+        description: "Coche « Mettre en évidence » pour les intitulés (souligné et en rose foncé)."
+        type: object
+        list: true
+        fields:
+          - { name: texte, label: "Texte", type: string }
+          - { name: souligne, label: "Mettre en évidence", type: boolean }
+      - { name: agenda_note, label: "Agenda — note finale", type: text }
       - { name: labels_titre, label: "Section labels — titre", type: string }
       - { name: labels_texte, label: "Section labels — texte", type: text }
 
@@ -54,86 +62,115 @@ content:
     type: file
     path: src/_data/retouches.json
     fields:
-      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: titre, label: "Titre de la page", type: string }
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: image, label: "Photo", type: image }
       - { name: intro_titre, label: "Titre d'introduction", type: string }
-      - { name: intro_texte1, label: "Paragraphe 1", type: text }
-      - { name: intro_texte2, label: "Paragraphe 2", type: text }
-      - { name: prestations, label: "Liste des prestations", type: string, list: true }
-      - { name: bonus_script, label: "Bonus Réparation — mot calligraphié", type: string }
-      - { name: bonus_titre, label: "Bonus Réparation — titre", type: string }
-      - { name: bonus_texte, label: "Bonus Réparation — texte", type: text }
-      - { name: atelier_titre, label: "Atelier — titre", type: string }
-      - { name: atelier_texte, label: "Atelier — texte", type: text }
+      - { name: paragraphes, label: "Texte de présentation (un paragraphe par ligne)", type: text, list: true }
+      - { name: contact_note, label: "Phrase mise en avant sous le tableau", type: string }
       - { name: tarifs_script, label: "Tarifs — mot calligraphié", type: string }
       - { name: tarifs_titre, label: "Tarifs — titre du tableau", type: string }
       - name: tarifs
         label: "Tableau des tarifs"
-        description: "Chaque ligne du tableau. Utilise la poignée à gauche pour réordonner, le + pour ajouter une prestation."
+        description: "Utilise la poignée à gauche pour réordonner, le + pour ajouter une prestation."
         type: object
         list: true
         fields:
           - { name: prestation, label: "Prestation", type: string }
           - { name: tarif, label: "Tarif (ex. 10 €)", type: string }
       - { name: tarifs_note, label: "Tarifs — note sous le tableau", type: text }
+      - { name: bonus_script, label: "Bonus Réparation — mot calligraphié", type: string }
+      - { name: bonus_titre, label: "Bonus Réparation — titre", type: string }
+      - { name: bonus_texte1, label: "Bonus Réparation — paragraphe 1", type: text }
+      - { name: bonus_texte2, label: "Bonus Réparation — paragraphe 2", type: text }
+      - { name: temoignages_titre, label: "Réalisations — titre", type: string }
+      - { name: temoignages, label: "Réalisations réalisées (liste)", type: string, list: true }
 
   - name: broderie
     label: "🪡 Page Broderies"
     type: file
     path: src/_data/broderie.json
     fields:
-      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: titre, label: "Titre de la page", type: string }
-      - { name: image, label: "Photo", type: image }
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
+      - { name: image, label: "Photo principale", type: image }
       - { name: intro_titre, label: "Titre d'introduction", type: string }
-      - { name: intro_texte1, label: "Paragraphe 1", type: text }
-      - { name: intro_texte2, label: "Paragraphe 2", type: text }
-      - { name: prestations, label: "Liste des prestations", type: string, list: true }
-      - { name: tarifs_script, label: "Tarifs — mot calligraphié", type: string }
+      - { name: intro_texte, label: "Texte d'introduction", type: text }
+      - name: atouts
+        label: "Les atouts (Pour tous les événements, Qualité…)"
+        type: object
+        list: true
+        fields:
+          - { name: titre, label: "Titre", type: string }
+          - { name: texte, label: "Texte", type: text }
+      - { name: galerie_pro_titre, label: "Galerie pro — titre", type: string }
+      - { name: galerie_pro_texte, label: "Galerie pro — texte", type: text }
+      - name: galerie_pro
+        label: "Galerie — entreprises & associations"
+        type: object
+        list: true
+        fields:
+          - { name: image, label: "Photo", type: image }
+          - { name: legende, label: "Légende (sert aussi au référencement)", type: string }
+      - { name: galerie_cadeau_titre, label: "Galerie cadeaux — titre", type: string }
+      - { name: galerie_cadeau_texte, label: "Galerie cadeaux — texte", type: text }
+      - name: galerie_cadeau
+        label: "Galerie — cadeaux personnalisés"
+        type: object
+        list: true
+        fields:
+          - { name: image, label: "Photo", type: image }
+          - { name: legende, label: "Légende (sert aussi au référencement)", type: string }
       - { name: tarifs_titre, label: "Tarifs — titre", type: string }
-      - { name: tarifs_intro, label: "Tarifs — phrase d'introduction", type: text }
-      - { name: tarifs, label: "Tarifs — liste des principes", type: string, list: true }
-      - { name: tarifs_note, label: "Tarifs — note de conclusion", type: text }
+      - { name: tarifs, label: "Tarifs — principes (liste)", type: text, list: true }
+      - { name: tarifs_exemple, label: "Tarifs — exemple chiffré", type: text }
+      - { name: tarifs_contact, label: "Tarifs — phrase de contact", type: text }
 
   - name: cours
     label: "✂️ Page Cours"
     type: file
     path: src/_data/cours.json
     fields:
-      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: titre, label: "Titre de la page", type: string }
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: image, label: "Photo", type: image }
-      - { name: intro_titre, label: "Titre d'introduction", type: string }
-      - { name: intro_texte, label: "Texte d'introduction", type: text }
-      - { name: intro_liste, label: "Ce que proposent les cours (liste)", type: string, list: true }
-      - { name: intro_note, label: "Note (matériel prêté, ponctualité…)", type: text }
-      - { name: projets_script, label: "Projets — mot calligraphié", type: string }
+      - { name: intro_paragraphes, label: "Introduction (un paragraphe par ligne)", type: text, list: true }
+      - { name: possibilites, label: "Les possibilités proposées (liste)", type: text, list: true }
       - { name: projets_titre, label: "Projets — titre", type: string }
       - name: projets
-        label: "Les projets pour débuter"
+        label: "Les projets au choix"
         type: object
         list: true
         fields:
-          - { name: titre, label: "Titre", type: string }
-          - { name: texte, label: "Description", type: text }
-      - { name: horaires_script, label: "Horaires — mot calligraphié", type: string }
-      - { name: horaires_titre, label: "Horaires — titre", type: string }
-      - { name: groupe_titre, label: "Cours de groupe — titre", type: string }
-      - { name: groupe_texte, label: "Cours de groupe — horaires", type: text }
-      - { name: groupe_note, label: "Cours de groupe — note (reprise…)", type: string }
-      - { name: individuel_titre, label: "Cours individuels — titre", type: string }
-      - { name: individuel_texte, label: "Cours individuels — texte", type: text }
-      - { name: individuel_note, label: "Cours individuels — note", type: string }
+          - { name: titre, label: "Nom du projet", type: string }
+      - { name: projets_note, label: "Projets — phrase calligraphiée finale", type: string }
       - { name: materiel_titre, label: "Matériel — titre", type: string }
-      - { name: materiel_note, label: "Matériel — conseil (pré-lavage…)", type: text }
       - name: materiel
         label: "Matériel par projet"
         type: object
         list: true
         fields:
           - { name: titre, label: "Projet", type: string }
-          - { name: items, label: "Fournitures", type: string, list: true }
+          - { name: items, label: "Fournitures", type: text, list: true }
+      - { name: avant_titre, label: "« Avant de couper » — titre", type: string }
+      - { name: avant_items, label: "« Avant de couper » — points", type: text, list: true }
+      - { name: conseils_titre, label: "Conseils — titre", type: string }
+      - { name: conseils, label: "Conseils — points", type: text, list: true }
+      - { name: tarifs_titre, label: "Tarifs — titre", type: string }
+      - { name: tarifs_note, label: "Tarifs — phrase calligraphiée (ex. Pensez à la carte cadeau !)", type: string }
+      - { name: horaires_titre, label: "Horaires — titre", type: string }
+      - { name: groupe_titre, label: "Cours collectifs — titre", type: string }
+      - { name: groupe_texte, label: "Cours collectifs — horaires", type: text }
+      - { name: individuel_titre, label: "Cours individuels — titre", type: string }
+      - { name: individuel_texte, label: "Cours individuels — texte", type: text }
+      - { name: temoignages_titre, label: "Témoignages — titre", type: string }
+      - name: temoignages
+        label: "Témoignages d'élèves"
+        type: object
+        list: true
+        fields:
+          - { name: texte, label: "Témoignage", type: text }
+          - { name: auteur, label: "Signature (facultatif)", type: string }
       - { name: cta_titre, label: "Encart final — titre", type: string }
       - { name: cta_texte, label: "Encart final — texte", type: text }
 
@@ -142,34 +179,38 @@ content:
     type: file
     path: src/_data/cartecadeau.json
     fields:
-      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: titre, label: "Titre de la page", type: string }
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: image, label: "Photo", type: image }
       - { name: intro_titre, label: "Titre d'introduction", type: string }
       - { name: intro_texte, label: "Texte d'introduction", type: text }
-      - { name: prestations, label: "Prestations possibles (liste)", type: string, list: true }
-      - { name: note, label: "Note (montant libre…)", type: text }
+      - { name: montants_titre, label: "Montants — titre", type: string }
+      - { name: montants, label: "Montants proposés (ex. 15 €)", type: string, list: true }
+      - { name: note, label: "Note (comment commander)", type: text }
 
   - name: quisuisje
     label: "👋 Page Qui suis-je ?"
     type: file
     path: src/_data/quisuisje.json
     fields:
-      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: titre, label: "Titre de la page", type: string }
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
+      - { name: image, label: "Photo portrait", type: image }
       - { name: intro_titre, label: "Titre d'introduction", type: string }
-      - { name: paragraphes, label: "Mon histoire (paragraphes)", type: text, list: true }
+      - { name: paragraphes, label: "Mon histoire — début (un paragraphe par ligne)", type: text, list: true }
+      - { name: citation, label: "Phrase mise en avant (calligraphiée)", type: string }
+      - { name: paragraphes_suite, label: "Mon histoire — suite (un paragraphe par ligne)", type: text, list: true }
+      - { name: signature, label: "Signature (ex. Aurélia)", type: string }
       - { name: engagements_titre, label: "Engagements — titre", type: string }
-      - { name: engagements, label: "Engagements & affiliations (liste)", type: string, list: true }
-      - { name: conclusion, label: "Phrase de conclusion", type: text }
+      - { name: engagements, label: "Engagements & affiliations (liste)", type: text, list: true }
 
   - name: contact
     label: "📮 Page Contact"
     type: file
     path: src/_data/contact.json
     fields:
-      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: titre, label: "Titre de la page", type: string }
+      - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: formulaire_titre, label: "Titre du formulaire", type: string }
       - { name: carte_script, label: "Carte — mot calligraphié", type: string }
       - { name: carte_titre, label: "Carte — titre", type: string }

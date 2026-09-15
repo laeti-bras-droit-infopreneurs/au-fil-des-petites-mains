@@ -3,73 +3,52 @@ layout: base.njk
 permalink: cours.html
 nav_active: cours
 title: Cours de couture | Au Fil des Petites Mains — Campagne, Dordogne
-description: "Cours et ateliers de couture à Campagne (à 8 min du Bugue) pour enfants, ados et adultes, tous niveaux. Cours de groupe et individuels, machine à coudre et surjeteuse."
+description: "Cours et ateliers de couture à Campagne (à 8 min du Bugue) pour enfants, ados et adultes, tous niveaux. Cours collectifs et individuels, machine à coudre et surjeteuse."
 ---
 <section class="page-head">
   <div class="container">
-    <span class="script">{{ cours.entete_script }}</span>
     <h1>{{ cours.titre }}</h1>
+    <span class="script">{{ cours.entete_script }}</span>
   </div>
 </section>
 
 <section class="section">
   <div class="container split">
-    <div class="split__img"><img src="{{ cours.image }}" alt="{{ cours.titre }}"></div>
+    <div class="split__img"><img src="{{ cours.image }}" alt="Cours de couture à Campagne, Dordogne"></div>
     <div>
-      <h2>{{ cours.intro_titre }}</h2>
-      <p>{{ cours.intro_texte }}</p>
+      {% for p in cours.intro_paragraphes %}
+      <p class="lead">{{ p }}</p>
+      {% endfor %}
       <ul class="info-list">
-        {% for item in cours.intro_liste %}<li>{{ item }}</li>
+        {% for p in cours.possibilites %}<li>{{ p }}</li>
         {% endfor %}
       </ul>
-      <p>{{ cours.intro_note }}</p>
     </div>
   </div>
 </section>
 
+<!-- Projets proposés -->
 <section class="section section--pink">
   <div class="container">
     <div class="center" style="margin-bottom:34px">
-      <span class="script" style="font-size:1.7rem">{{ cours.projets_script }}</span>
       <h2>{{ cours.projets_titre }}</h2>
     </div>
     <div class="cards">
       {% for p in cours.projets %}
-      <article class="card"><div class="card__body">
-        <h3>{{ p.titre }}</h3>
-        <p>{{ p.texte }}</p>
+      <article class="card"><div class="card__body center">
+        <h3 class="card__titre">{{ p.titre }}</h3>
       </div></article>
       {% endfor %}
     </div>
+    <p class="center script" style="font-size:1.7rem;margin-top:26px">{{ cours.projets_note }}</p>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="center" style="margin-bottom:24px">
-      <span class="script" style="font-size:1.7rem">{{ cours.horaires_script }}</span>
-      <h2>{{ cours.horaires_titre }}</h2>
-    </div>
-    <div class="split">
-      <div class="box box--pink">
-        <h3>{{ cours.groupe_titre }}</h3>
-        <p>{{ cours.groupe_texte }}</p>
-        <p style="color:var(--muted)">{{ cours.groupe_note }}</p>
-      </div>
-      <div class="box box--pink">
-        <h3>{{ cours.individuel_titre }}</h3>
-        <p>{{ cours.individuel_texte }}</p>
-        <p style="color:var(--muted)">{{ cours.individuel_note }}</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- Matériel -->
 <section class="section section--cream">
   <div class="container">
-    <div class="center" style="margin-bottom:24px">
+    <div class="center" style="margin-bottom:34px">
       <h2>{{ cours.materiel_titre }}</h2>
-      <p class="lead" style="max-width:720px;margin:0 auto">{{ cours.materiel_note }}</p>
     </div>
     <div class="cards">
       {% for m in cours.materiel %}
@@ -85,7 +64,68 @@ description: "Cours et ateliers de couture à Campagne (à 8 min du Bugue) pour 
   </div>
 </section>
 
+<!-- Avant de couper + conseils -->
 <section class="section">
+  <div class="container" style="max-width:860px">
+    <h2 class="center">{{ cours.avant_titre }}</h2>
+    <div class="box box--pink">
+      <ul class="info-list">
+        {% for item in cours.avant_items %}<li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <h2 class="center" style="margin-top:48px">{{ cours.conseils_titre }}</h2>
+    <div class="box">
+      <ul class="info-list">
+        {% for c in cours.conseils %}<li>{{ c }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Tarifs & horaires -->
+<section class="section section--pink">
+  <div class="container">
+    <div class="center" style="margin-bottom:10px">
+      <h2>{{ cours.tarifs_titre }}</h2>
+      <p class="script" style="font-size:1.7rem">{{ cours.tarifs_note }}</p>
+    </div>
+    <h3 class="center" style="margin:34px 0 20px">{{ cours.horaires_titre }}</h3>
+    <div class="split">
+      <div class="box box--pink">
+        <h3>{{ cours.groupe_titre }}</h3>
+        <p style="white-space:pre-line">{{ cours.groupe_texte }}</p>
+      </div>
+      <div class="box box--pink">
+        <h3>{{ cours.individuel_titre }}</h3>
+        <p style="white-space:pre-line">{{ cours.individuel_texte }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Témoignages -->
+{% if cours.temoignages.length %}
+<section class="section">
+  <div class="container">
+    <div class="center" style="margin-bottom:34px">
+      <h2>{{ cours.temoignages_titre }}</h2>
+    </div>
+    <div class="temoignages">
+      {% for t in cours.temoignages %}
+      <blockquote class="temoignage">
+        <p>{{ t.texte }}</p>
+        {% if t.auteur %}<cite>{{ t.auteur }}</cite>{% endif %}
+      </blockquote>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section--cream">
   <div class="container center">
     <h2>{{ cours.cta_titre }}</h2>
     <p class="lead" style="max-width:640px;margin:0 auto 24px">{{ cours.cta_texte }}</p>

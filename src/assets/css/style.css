@@ -247,6 +247,194 @@ h3 { font-size: 1.5rem; }
   margin: 2px 0;
 }
 
+/* ---------- Titre orné (Agenda) ---------- */
+.titre-orne {
+  font-family: 'Parisienne', cursive;
+  font-weight: 400;
+  color: var(--raspberry);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.titre-orne::before {
+  content: "✦";
+  font-family: inherit;
+  color: var(--pink-mid);
+  font-size: .8em;
+}
+
+/* ---------- Accroche du hero ---------- */
+.hero__accroche {
+  display: block;
+  font-size: 1.6rem;
+  margin: 0 0 18px;
+}
+
+/* ---------- Cartes cliquables (accueil) ---------- */
+.card--lien { text-decoration: none; color: inherit; }
+.card--lien:hover { text-decoration: none; }
+.card__titre {
+  color: var(--raspberry);
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+  letter-spacing: .5px;
+}
+
+/* ---------- Agenda ---------- */
+.agenda {
+  display: grid;
+  grid-template-columns: minmax(0, 420px) 1fr;
+  gap: 44px;
+  align-items: center;
+}
+.agenda__img img {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+.agenda__ligne {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  color: var(--text);
+}
+.agenda__ligne--fort {
+  font-weight: 700;
+  color: var(--raspberry);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.agenda__note {
+  margin: 22px 0 26px;
+  font-size: 1.1rem;
+  color: #55504c;
+}
+
+/* ---------- Galeries de photos ---------- */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 22px;
+}
+.galerie__item {
+  margin: 0;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+.galerie__item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  max-width: 100%;
+}
+.galerie__item figcaption {
+  padding: 12px 14px;
+  font-size: .88rem;
+  color: #55504c;
+  text-align: center;
+  flex: 1;
+}
+
+/* ---------- Sous-titre d'atout ---------- */
+.atout__titre {
+  color: var(--raspberry);
+  font-size: 1.3rem;
+  margin-top: 1.4em;
+}
+
+/* ---------- Liste de réalisations ---------- */
+.realisations {
+  list-style: none;
+  padding: 0;
+  max-width: 620px;
+  margin: 24px auto 0;
+}
+.realisations li {
+  background: var(--pink-soft);
+  border-radius: 30px;
+  padding: 12px 24px;
+  margin-bottom: 12px;
+  color: #55504c;
+}
+
+/* ---------- Témoignages ---------- */
+.temoignages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 26px;
+}
+.temoignage {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 30px;
+  margin: 0;
+  border-left: 4px solid var(--pink-mid);
+}
+.temoignage p {
+  font-style: italic;
+  color: #55504c;
+  margin: 0;
+}
+.temoignage p::before { content: "« "; color: var(--pink-mid); }
+.temoignage p::after { content: " »"; color: var(--pink-mid); }
+.temoignage cite {
+  display: block;
+  margin-top: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--raspberry);
+  text-align: right;
+}
+
+/* ---------- Portrait (Qui suis-je) ---------- */
+.portrait::after { content: ""; display: block; clear: both; }
+.portrait__img {
+  float: right;
+  width: 260px;
+  max-width: 42%;
+  margin: 4px 0 18px 26px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.citation {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 34px 0;
+}
+.signature {
+  text-align: right;
+  font-size: 2rem;
+  margin: 10px 0 30px;
+}
+
+/* ---------- Montants carte cadeau ---------- */
+.montants {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.montants li { margin: 0; }
+
+@media (max-width: 900px) {
+  .agenda { grid-template-columns: 1fr; }
+  .titre-orne { justify-content: center; }
+}
+@media (max-width: 600px) {
+  .portrait__img { float: none; width: 100%; max-width: 100%; margin: 0 0 20px; }
+  .signature { text-align: center; }
+}
+
 /* ---------- Tableau de tarifs ---------- */
 .sr-only {
   position: absolute;

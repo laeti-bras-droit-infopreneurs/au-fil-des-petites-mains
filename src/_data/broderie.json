@@ -1,23 +1,49 @@
 {
-  "entete_script": "Un savoir-faire local",
-  "titre": "Broderies personnalisées",
+  "entete_script": "Un Service sur Mesure",
+  "titre": "Broderies numériques",
   "image": "assets/img/broderie.jpg",
-  "intro_titre": "La broderie numérique sur mesure",
-  "intro_texte1": "Vous souhaitez personnaliser les tenues de votre équipe, marquer un événement ou offrir un cadeau unique ? Je réalise vos broderies personnalisées, pour les professionnels comme pour les particuliers.",
-  "intro_texte2": "Je brode sur une grande variété d'articles : polos, t-shirts, casquettes, tabliers, serviettes… Un prénom, un logo ou un message : laissez parler vos envies.",
-  "prestations": [
-    "Broderie pour entreprises : logos, noms, tenues d'équipe",
-    "Broderie pour particuliers : cadeaux personnalisés, naissances, événements",
-    "Numérisation professionnelle de vos motifs et textes",
-    "Test réalisé sur un tissu similaire avant la broderie finale"
+  "intro_titre": "Un Service sur Mesure",
+  "intro_texte": "Vous êtes un professionnel en quête d'une identité visuelle unique pour votre équipe ? Ou peut-être un particulier à la recherche du cadeau parfait ? Mon service de broderie personnalisée est la solution idéale pour vous.",
+  "atouts": [
+    {
+      "titre": "Pour tous les événements",
+      "texte": "Que ce soit pour un événement d'entreprise, un mariage, une naissance, ou simplement pour ajouter une touche personnelle à votre garde-robe, je m'adapte à votre demande."
+    },
+    {
+      "titre": "Qualité et originalité",
+      "texte": "Un savoir-faire artisanal local pour garantir que chaque broderie est une pièce unique."
+    }
   ],
-  "tarifs_script": "Tarifs",
-  "tarifs_titre": "Comment ça marche ?",
-  "tarifs_intro": "Le tarif d'une broderie dépend du nombre de couleurs et de la complexité du tissu. Voici les grands principes :",
+  "galerie_pro_titre": "Entreprises, associations...",
+  "galerie_pro_texte": "Mettez en valeur votre entreprise avec votre logo, vos coordonnées, un prénom, etc. Broderies en petite série.",
+  "galerie_pro": [
+    { "image": "assets/img/broderie-pro/personnalisation polo dordogne.avif", "legende": "Polos brodés personnalisés — 14 € le polo" },
+    { "image": "assets/img/broderie-pro/personnalisation polo perigord.avif", "legende": "Personnalisation de polo, Périgord" },
+    { "image": "assets/img/broderie-pro/broderie sarlat entreprise.avif", "legende": "Broderie entreprise, Sarlat" },
+    { "image": "assets/img/broderie-pro/casquette personnalisée entreprise dordogne.avif", "legende": "Casquette personnalisée pour entreprise" },
+    { "image": "assets/img/broderie-pro/vetement personnalisé dordogne.avif", "legende": "Vêtement personnalisé, Dordogne" },
+    { "image": "assets/img/broderie-pro/personnalisation vetement dordogne.avif", "legende": "Personnalisation de vêtement professionnel" },
+    { "image": "assets/img/broderie-pro/broderie personnalisée sarlat.avif", "legende": "Broderie personnalisée, Sarlat" },
+    { "image": "assets/img/broderie-pro/broderie personnaliséeé dordogne.avif", "legende": "Broderie personnalisée, Dordogne" },
+    { "image": "assets/img/broderie-pro/broderie personnaliséeé.avif", "legende": "Broderie sur mesure" }
+  ],
+  "galerie_cadeau_titre": "Un prénom, un dessin",
+  "galerie_cadeau_texte": "Un cadeau unique et personnel !",
+  "galerie_cadeau": [
+    { "image": "assets/img/broderie-cadeau/broderie personnalisé enfant.avif", "legende": "Broderie personnalisée pour enfant" },
+    { "image": "assets/img/broderie-cadeau/personnalisation sarlat enfant.avif", "legende": "Personnalisation enfant, Sarlat" },
+    { "image": "assets/img/broderie-cadeau/personnalisation sac enfant sarlat.avif", "legende": "Sac d'enfant personnalisé" },
+    { "image": "assets/img/broderie-cadeau/cadeau broderie personnalisée périgord.avif", "legende": "Cadeau brodé personnalisé, Périgord" },
+    { "image": "assets/img/broderie-cadeau/cadeau personnalisé dordogne.avif", "legende": "Cadeau personnalisé, Dordogne" },
+    { "image": "assets/img/broderie-cadeau/broderie personnalisée dordogne.avif", "legende": "Broderie personnalisée, Dordogne" },
+    { "image": "assets/img/broderie-cadeau/tote bag personnalisé sarlat.gif", "legende": "Tote bag personnalisé, Sarlat" }
+  ],
+  "tarifs_titre": "Tarifs et explications",
   "tarifs": [
-    "Numérisation du motif : de 2 € à 40 € selon la complexité (test inclus sur un tissu similaire).",
-    "Exemple : un prénom d'environ 5 à 20 cm de large revient à 5 € à 12 €, plus 2 € de numérisation.",
-    "Tarifs dégressifs à partir d'une certaine quantité."
+    "Le prix est variable en fonction du nombre de couleurs et du support, plus ou moins complexe à travailler.",
+    "Il est nécessaire de procéder à une digitalisation (numérisation du dessin ou préparation du texte dans un logiciel de broderie, pour l'adapter à son support) : le tarif sera de 2 à 40 euros. Test sur un tissu similaire à votre textile inclus.",
+    "Tarif dégressif en fonction de la quantité de broderies souhaitée."
   ],
-  "tarifs_note": "Chaque projet étant unique, n'hésitez pas à me contacter pour établir un devis personnalisé et gratuit."
+  "tarifs_exemple": "Par exemple, comptez entre 5 et 12 euros pour la broderie d'un prénom d'environ 5 à 20 cm de large (+ 2 euros de digitalisation).",
+  "tarifs_contact": "Contactez-moi au 06.07.77.38.86 pour vous proposer un devis adapté."
 }

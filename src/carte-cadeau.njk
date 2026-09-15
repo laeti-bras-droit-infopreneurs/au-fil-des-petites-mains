@@ -7,21 +7,25 @@ description: "Offrez une carte cadeau Au Fil des Petites Mains : retouches, brod
 ---
 <section class="page-head">
   <div class="container">
-    <span class="script">{{ cartecadeau.entete_script }}</span>
     <h1>{{ cartecadeau.titre }}</h1>
+    <span class="script">{{ cartecadeau.entete_script }}</span>
   </div>
 </section>
 
 <section class="section">
   <div class="container split">
-    <div class="split__img"><img src="{{ cartecadeau.image }}" alt="{{ cartecadeau.titre }}"></div>
+    <div class="split__img"><img src="{{ cartecadeau.image }}" alt="Carte cadeau Au Fil des Petites Mains"></div>
     <div>
       <h2>{{ cartecadeau.intro_titre }}</h2>
       <p>{{ cartecadeau.intro_texte }}</p>
-      <ul class="info-list">
-        {% for p in cartecadeau.prestations %}<li>{{ p }}</li>
+
+      <h3 class="atout__titre">{{ cartecadeau.montants_titre }}</h3>
+      <ul class="montants">
+        {% for m in cartecadeau.montants %}
+        <li class="price-tag">{{ m }}</li>
         {% endfor %}
       </ul>
+
       <p>{{ cartecadeau.note }}</p>
       <a class="btn" href="contact.html">Commander une carte cadeau</a>
     </div>

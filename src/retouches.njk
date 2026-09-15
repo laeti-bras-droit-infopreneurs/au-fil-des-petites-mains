@@ -3,31 +3,29 @@ layout: base.njk
 permalink: retouches.html
 nav_active: retouches
 title: Retouches | Au Fil des Petites Mains — Couturière en Dordogne
-description: "Un service de retouches sur mesure à Campagne (Dordogne) : ourlets, pinces, réparations, pose de fermetures éclair. Répar-acteur labellisé, bénéficiez du Bonus Réparation."
+description: "Un service de retouches sur mesure à Campagne (Dordogne) : ourlets, pinces, réparations, pose de fermetures éclair. Répar-actrice labellisée, bénéficiez du Bonus Réparation."
 ---
 <section class="page-head">
   <div class="container">
-    <span class="script">{{ retouches.entete_script }}</span>
     <h1>{{ retouches.titre }}</h1>
+    <span class="script">{{ retouches.entete_script }}</span>
   </div>
 </section>
 
 <section class="section">
   <div class="container split">
-    <div class="split__img"><img src="{{ retouches.image }}" alt="{{ retouches.titre }}"></div>
+    <div class="split__img"><img src="{{ retouches.image }}" alt="Retouches de vêtements à Campagne, Dordogne"></div>
     <div>
       <h2>{{ retouches.intro_titre }}</h2>
-      <p>{{ retouches.intro_texte1 }}</p>
-      <p>{{ retouches.intro_texte2 }}</p>
-      <ul class="info-list">
-        {% for p in retouches.prestations %}<li>{{ p }}</li>
-        {% endfor %}
-      </ul>
+      {% for p in retouches.paragraphes %}
+      <p>{{ p }}</p>
+      {% endfor %}
       <a class="btn" href="contact.html">Prendre rendez-vous</a>
     </div>
   </div>
 </section>
 
+<!-- Grille tarifaire -->
 <section class="section section--cream">
   <div class="container">
     <div class="center" style="margin-bottom:30px">
@@ -61,17 +59,22 @@ description: "Un service de retouches sur mesure à Campagne (Dordogne) : ourlet
       <p class="tarifs__vide" data-tarifs-empty hidden>Aucune prestation ne correspond à votre recherche.</p>
     </div>
 
+    {% if retouches.contact_note %}
+    <p class="center" style="margin:26px auto 0;font-weight:600">{{ retouches.contact_note }}</p>
+    {% endif %}
     {% if retouches.tarifs_note %}
-    <p class="center" style="max-width:720px;margin:22px auto 0;color:var(--muted);font-size:.95rem">{{ retouches.tarifs_note }}</p>
+    <p class="center" style="max-width:720px;margin:10px auto 0;color:var(--muted);font-size:.95rem">{{ retouches.tarifs_note }}</p>
     {% endif %}
   </div>
 </section>
 
+<!-- Bonus Réparation -->
 <section class="section section--pink">
   <div class="container center">
     <span class="script" style="font-size:1.7rem">{{ retouches.bonus_script }}</span>
     <h2>{{ retouches.bonus_titre }}</h2>
-    <p class="lead" style="max-width:760px;margin:0 auto 30px">{{ retouches.bonus_texte }}</p>
+    <p class="lead" style="max-width:760px;margin:0 auto 8px">{{ retouches.bonus_texte1 }}</p>
+    <p class="lead" style="max-width:760px;margin:0 auto 30px">{{ retouches.bonus_texte2 }}</p>
     <div class="labels">
       <img src="assets/img/label-bonus.png" alt="Bonus Réparation">
       <img src="assets/img/label-reparacteur.png" alt="Réparateur labellisé Refashion">
@@ -79,10 +82,17 @@ description: "Un service de retouches sur mesure à Campagne (Dordogne) : ourlet
   </div>
 </section>
 
+<!-- Témoignages / réalisations -->
+{% if retouches.temoignages.length %}
 <section class="section">
   <div class="container center">
-    <h2>{{ retouches.atelier_titre }}</h2>
-    <p class="lead" style="max-width:680px;margin:0 auto">{{ retouches.atelier_texte }}</p>
-    <div style="margin-top:24px"><a class="btn" href="contact.html">Me contacter</a></div>
+    <h2>{{ retouches.temoignages_titre }}</h2>
+    <ul class="realisations">
+      {% for t in retouches.temoignages %}
+      <li>{{ t }}</li>
+      {% endfor %}
+    </ul>
+    <div style="margin-top:28px"><a class="btn" href="contact.html">Me contacter</a></div>
   </div>
 </section>
+{% endif %}

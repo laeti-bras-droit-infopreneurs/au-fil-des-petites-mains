@@ -1,66 +1,83 @@
 {
   "entete_script": "À Campagne, à 8 min du Bugue",
-  "titre": "Cours de couture",
+  "titre": "Cours",
   "image": "assets/img/cours.jpg",
-  "intro_titre": "Apprendre à coudre, à votre rythme",
-  "intro_texte": "Je vous accompagne, adultes et enfants, dans l'apprentissage de la couture. Que vous soyez débutant ou déjà initié, les cours s'adaptent à votre niveau et à vos envies.",
-  "intro_liste": [
-    "Aide sur votre projet personnel (accessoire ou vêtement)",
-    "Apprentissage individuel de la machine à coudre ou de la surjeteuse",
-    "Projets guidés, tutoriels fournis"
+  "intro_paragraphes": [
+    "Que vous soyez un adulte cherchant à maîtriser l'art de la couture ou un parent dont l'enfant souhaite s'initier à ce savoir-faire ancestral, j'aurai plaisir à vous accompagner dans votre projet.",
+    "Plusieurs possibilités vous sont proposées…"
   ],
-  "intro_note": "Le matériel (ciseaux, règles, machines) peut être prêté sur place. Pensez à arriver 5 minutes en avance !",
-  "projets_script": "Pour débuter",
-  "projets_titre": "Trois projets au choix",
+  "possibilites": [
+    "Si vous optez pour votre projet sur lequel vous bloquez, que ce soit la réalisation d'accessoires ou d'un habit, je serai à vos côtés pour vous aider.",
+    "Si votre besoin est de prendre en main votre machine à coudre ou votre surjeteuse, c'est possible en cours individuel. Parce que vous êtes débutante, je serai 100 % avec vous.",
+    "Si vous optez pour un projet que je propose, vous repartez avec le tutoriel."
+  ],
+  "projets_titre": "Vous avez le choix entre…",
+  "projets_note": "À vous de choisir !",
   "projets": [
-    {
-      "titre": "Le tote bag",
-      "texte": "Un sac en toile non doublé, idéal pour un premier projet et se familiariser avec la machine."
-    },
-    {
-      "titre": "La pochette à boutons",
-      "texte": "Une petite pochette pratique, fermée par des boutons-pression, pour apprendre les finitions."
-    },
-    {
-      "titre": "La housse de coussin",
-      "texte": "Une housse de coussin portefeuille, pour maîtriser les mesures et les ourlets."
-    }
+    { "titre": "Le tote-bag non doublé" },
+    { "titre": "La pochette à boutons" },
+    { "titre": "La housse de coussin portefeuille" }
   ],
-  "horaires_script": "Horaires",
-  "horaires_titre": "Quand ont lieu les cours ?",
-  "groupe_titre": "Cours de groupe",
-  "groupe_texte": "Deux samedis matin par mois, de 9h à 12h. Le mardi soir, de 18h à 19h30.",
-  "groupe_note": "Les cours de groupe reprennent en septembre.",
-  "individuel_titre": "Cours individuels",
-  "individuel_texte": "Sur rendez-vous, selon vos disponibilités.",
-  "individuel_note": "Les cours individuels se poursuivent tout l'été.",
-  "materiel_titre": "Le matériel à prévoir",
-  "materiel_note": "Pensez à pré-laver vos tissus pour éviter qu'ils ne rétrécissent après votre projet.",
+  "materiel_titre": "Vous aurez besoin de…",
   "materiel": [
     {
       "titre": "Pochette à boutons",
       "items": [
-        "2 boutons-pression",
-        "Tissu principal 25 × 40 cm",
-        "Doublure assortie",
-        "Entoilage optionnel (150 à 350 g/m²)"
+        "Boutons pressions x 2 (des boutons pression à coudre conviennent aussi très bien)",
+        "Tissu principal : 25 cm de large x 40 cm de haut",
+        "Tissu doublure : même dimension que le tissu principal",
+        "Grammage des tissus : de 150 à 350 gr/m² environ",
+        "Thermocollant : optionnel (en fonction de l'épaisseur du tissu), mêmes dimensions"
       ]
     },
     {
-      "titre": "Tote bag",
+      "titre": "Tote bag non doublé",
       "items": [
-        "Tissu de 200 à 400 g/m²",
-        "Sangles / anses",
-        "Dimensions selon vos envies"
+        "Tissu (environ 200 à 400 gr/m²)",
+        "Dimensions : en fonction de votre souhait !",
+        "Anses",
+        "Pour information : la plupart du temps, en magasin de tissu, les coupons sont coupés au minimum 50 cm de haut sur la laize (largeur du tissu). Vous pouvez donc partir sur 2 coupons de 50 cm de haut x 40 de large (marge de couture et ourlets compris), par exemple."
       ]
     },
     {
-      "titre": "Housse de coussin",
+      "titre": "Housse de coussin portefeuille",
       "items": [
-        "Popeline, coton ou jacquard (150 à 300 g/m²)",
-        "1 pièce avant de 46 × 46 cm minimum",
-        "2 rectangles arrière de 32 × 46 cm"
+        "Tissu style popeline, cotonnade ou même jacquard pour une déco pour canapé (grammage : environ 150 à 300 gr/m²)",
+        "Les dimensions du tissu vont varier en fonction de votre coussin (un petit coussin acheté en magasin fait 40 x 40 cm)",
+        "Pour un coussin de cette dimension, il vous faudra un coupon minimum de 46 x 46 cm (pour le devant)",
+        "Et pour le dos : 2 rectangles de 32 x 46 cm (les 2 tissus se superposent)"
       ]
+    }
+  ],
+  "avant_titre": "Avant de couper !…",
+  "avant_items": [
+    "Attention ! Si votre tissu a un motif, veillez à anticiper le sens de découpe de votre tissu !",
+    "Pour la découpe des tissus de la housse de coussin et du tote bag, il est nécessaire d'utiliser des ciseaux cranteurs, ou bien de réaliser un point zigzag que l'on pourra voir durant le cours. L'avantage des ciseaux cranteurs : ils vous font gagner du temps, et je peux vous en prêter pendant le cours !",
+    "Lors du cours, le matériel peut être prêté (règle, ciseaux, etc.) et même une machine à coudre si besoin !",
+    "Pensez à apporter vos fils, aiguilles / épingles, tissu lavé, et la notice de votre machine à coudre."
+  ],
+  "conseils_titre": "Quelques petits conseils avant de venir",
+  "conseils": [
+    "Lavez vos tissus : pour éviter que votre création ne bouge après le lavage (se déforme, réduise de taille…)",
+    "C'est l'occasion peut-être de faire vos fonds d'armoire et de trouver des pépites de vieux habits pour les recycler et en récupérer le tissu ! Cependant, attention aux tissus trop fins comme certains draps !",
+    "Arrivez 5 minutes avant le début du cours : le temps de vous installer confortablement."
+  ],
+  "tarifs_titre": "TARIFS EN COURS DE MODIFICATION…",
+  "tarifs_note": "Pensez à la carte cadeau !",
+  "horaires_titre": "Horaires",
+  "groupe_titre": "Cours collectifs",
+  "groupe_texte": "Deux samedis matin par mois, de 9h à 12h.\nMardi soir de 18h à 19h30.",
+  "individuel_titre": "Cours individuels",
+  "individuel_texte": "Sur rendez-vous.",
+  "temoignages_titre": "Témoignages",
+  "temoignages": [
+    {
+      "texte": "J'ai eu ma première leçon surjeteuse ce matin. Les explications sont claires, utiles. Aurélia m'a montré comment enfiler, régler la tension, la largeur et la longueur du fil, changer les aiguilles. Bref un cours complet sur mes plus grosses failles et ceci dans une ambiance détendue laissant place au bavardage. À consulter rapidement si vous avez des soucis d'utilisation, de réglage, de vos machines à coudre, à surjeter. Merci Aurélia.",
+      "auteur": ""
+    },
+    {
+      "texte": "Je suis devenue de plus en plus autonome et confiante devant ma machine à coudre et j'ai pu me lancer dans des projets plus complexes. Merci à Aurélia qui a su faire preuve de patience et de pédagogie tout au long de nos ateliers !",
+      "auteur": "Anne B."
     }
   ],
   "cta_titre": "Envie de vous lancer ?",

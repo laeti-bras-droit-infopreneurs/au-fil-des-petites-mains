@@ -1,33 +1,37 @@
 {
-  "hero_script": "Bienvenue",
+  "hero_script": "Artisane Couturière à Campagne (Dordogne)",
   "hero_titre": "Au Fil des Petites Mains",
-  "hero_texte": "Je suis Aurélia, installée depuis juillet 2022 dans mon atelier de couture à Campagne, en Dordogne (Périgord Noir). Je vous propose de la broderie numérique personnalisée pour vous ou votre entreprise, de la retouche de vêtements, ainsi que des ateliers et cours de couture.",
-  "hero_image": "assets/img/hero.jpg",
-  "services_script": "Mes savoir-faire",
+  "hero_texte1": "Bienvenue dans mon atelier de couture à Campagne en Dordogne, à quelques kilomètres du Bugue.",
+  "hero_texte2": "Je suis Aurélia, Artisane Couturière. Ma petite entreprise a pris vie en juillet 2022.",
+  "hero_texte3": "Si vous êtes à la recherche d'une broderie numérique personnalisée pour vous ou votre entreprise, de retouches de vêtements, ou encore d'atelier de couture, vous êtes au bon endroit !",
+  "hero_image": "assets/img/accueil.jpg",
   "services_titre": "Ce que je vous propose",
   "services": [
     {
-      "titre": "Retouches",
-      "texte": "Ourlets, pinces, réparations, pose de fermetures éclair… Je redonne vie à vos vêtements avec un service sur mesure.",
+      "titre": "RETOUCHES",
       "image": "assets/img/retouches.jpg",
       "lien": "retouches.html"
     },
     {
-      "titre": "Broderies personnalisées",
-      "texte": "Broderie numérique sur mesure pour les entreprises, les événements ou pour offrir un cadeau unique et personnalisé.",
+      "titre": "BRODERIES PERSONNALISÉES",
       "image": "assets/img/broderie.jpg",
       "lien": "broderie.html"
     },
     {
-      "titre": "Cours de couture",
-      "texte": "Des cours et ateliers de couture pour enfants, ados et adultes, adaptés à tous les niveaux, en groupe ou en individuel.",
+      "titre": "COURS",
       "image": "assets/img/cours.jpg",
       "lien": "cours.html"
     }
   ],
-  "agenda_script": "Agenda",
-  "agenda_titre": "Les cours de groupe",
-  "agenda_texte": "Les cours de couture en groupe reprennent en septembre. Les cours individuels, eux, se poursuivent tout l'été sur rendez-vous.",
+  "agenda_titre": "Agenda",
+  "agenda_image": "assets/img/agenda-cours.jpg",
+  "agenda_lignes": [
+    { "texte": "Nouvelle rentrée : nouvelles dates !", "souligne": true },
+    { "texte": "Samedi 12 et 26 Septembre", "souligne": false },
+    { "texte": "Puis pour le mois d'Octobre :", "souligne": true },
+    { "texte": "Les samedis 10 et 24 Octobre.", "souligne": false }
+  ],
+  "agenda_note": "Les cours individuels sont toujours sur RDV en semaine.",
   "labels_titre": "Un savoir-faire artisanal et responsable",
-  "labels_texte": "Artisan reconnu, je suis également Répar-acteur labellisé : vous pouvez bénéficier du Bonus Réparation pour vos retouches, une aide éco-responsable qui soutient l'artisanat local."
+  "labels_texte": "Artisane reconnue, je suis également Répar-actrice labellisée : vous pouvez bénéficier du Bonus Réparation pour vos retouches, une aide éco-responsable qui soutient l'artisanat local."
 }
