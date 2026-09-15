@@ -37,10 +37,6 @@
   "bonus_titre": "Bonus Réparation",
   "bonus_texte1": "Profitez de cette initiative éco-responsable pour donner une nouvelle vie à vos vêtements.",
   "bonus_texte2": "Grâce au Bonus Réparation, vous bénéficiez d'une aide financière tout en soutenant le savoir-faire local. Ensemble, agissons pour une mode durable.",
-  "temoignages_titre": "Témoignages",
-  "temoignages": [
-    "Création d'une traîne sur une robe satin",
-    "Ourlet en biais invisible sur un pantalon de costume",
-    "Ourlet sur organza"
-  ]
+  "atelier_titre": "L'atelier",
+  "atelier_texte": "Mon atelier se situe à Campagne. Appelez-moi pour convenir d'un rendez-vous : à bientôt !"
 }

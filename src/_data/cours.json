@@ -14,9 +14,18 @@
   "projets_titre": "Vous avez le choix entre…",
   "projets_note": "À vous de choisir !",
   "projets": [
-    { "titre": "Le tote-bag non doublé" },
-    { "titre": "La pochette à boutons" },
-    { "titre": "La housse de coussin portefeuille" }
+    {
+      "titre": "Le tote-bag non doublé",
+      "image": "assets/img/projets/tote-bag-cours-couture-dordogne.jpg"
+    },
+    {
+      "titre": "La pochette à boutons",
+      "image": "assets/img/projets/pochette-a-boutons-cours-couture-dordogne.jpg"
+    },
+    {
+      "titre": "La housse de coussin portefeuille",
+      "image": "assets/img/projets/housse-coussin-cours-couture-dordogne.jpg"
+    }
   ],
   "materiel_titre": "Vous aurez besoin de…",
   "materiel": [
@@ -63,6 +72,7 @@
     "Arrivez 5 minutes avant le début du cours : le temps de vous installer confortablement."
   ],
   "tarifs_titre": "TARIFS EN COURS DE MODIFICATION…",
+  "tarifs_image": "",
   "tarifs_note": "Pensez à la carte cadeau !",
   "horaires_titre": "Horaires",
   "groupe_titre": "Cours collectifs",

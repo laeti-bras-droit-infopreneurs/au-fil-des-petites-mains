@@ -83,8 +83,8 @@ content:
       - { name: bonus_titre, label: "Bonus Réparation — titre", type: string }
       - { name: bonus_texte1, label: "Bonus Réparation — paragraphe 1", type: text }
       - { name: bonus_texte2, label: "Bonus Réparation — paragraphe 2", type: text }
-      - { name: temoignages_titre, label: "Réalisations — titre", type: string }
-      - { name: temoignages, label: "Réalisations réalisées (liste)", type: string, list: true }
+      - { name: atelier_titre, label: "Atelier — titre", type: string }
+      - { name: atelier_texte, label: "Atelier — texte", type: text }
 
   - name: broderie
     label: "🪡 Page Broderies"
@@ -143,6 +143,7 @@ content:
         list: true
         fields:
           - { name: titre, label: "Nom du projet", type: string }
+          - { name: image, label: "Photo du projet", type: image }
       - { name: projets_note, label: "Projets — phrase calligraphiée finale", type: string }
       - { name: materiel_titre, label: "Matériel — titre", type: string }
       - name: materiel
@@ -157,6 +158,10 @@ content:
       - { name: conseils_titre, label: "Conseils — titre", type: string }
       - { name: conseils, label: "Conseils — points", type: text, list: true }
       - { name: tarifs_titre, label: "Tarifs — titre", type: string }
+      - name: tarifs_image
+        label: "Tarifs — image de la grille (JPG ou PNG)"
+        description: "Facultatif. Dépose ici la photo ou l'image de ta grille tarifaire quand elle sera prête : elle s'affichera automatiquement sous le titre. Laisse vide pour ne rien afficher."
+        type: image
       - { name: tarifs_note, label: "Tarifs — phrase calligraphiée (ex. Pensez à la carte cadeau !)", type: string }
       - { name: horaires_titre, label: "Horaires — titre", type: string }
       - { name: groupe_titre, label: "Cours collectifs — titre", type: string }
