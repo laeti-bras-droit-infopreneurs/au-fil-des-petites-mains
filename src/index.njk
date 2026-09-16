@@ -9,7 +9,7 @@ description: "Entrez dans l'univers de la couture avec Au Fil des Petites Mains 
 <section class="hero hero--photo">
   {% if accueil.hero_image %}
   <div class="hero__photo">
-    <img src="{{ accueil.hero_image }}" alt="Aurélia devant son atelier de couture Au Fil des Petites Mains à Campagne, en Dordogne" fetchpriority="high">
+    <img src="{{ accueil.hero_image }}?v={{ build.version }}" alt="Aurélia devant son atelier de couture Au Fil des Petites Mains à Campagne, en Dordogne" fetchpriority="high">
   </div>
   {% endif %}
   <div class="container">
