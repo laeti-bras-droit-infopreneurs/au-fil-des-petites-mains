@@ -38,7 +38,6 @@ description: "Broderie numérique personnalisée en Dordogne : polos, t-shirts, 
       {% for item in broderie.galerie_pro %}
       <figure class="galerie__item">
         <img src="{{ item.image }}" alt="{{ item.legende }}" loading="lazy">
-        <figcaption>{{ item.legende }}</figcaption>
       </figure>
       {% endfor %}
     </div>
@@ -58,7 +57,6 @@ description: "Broderie numérique personnalisée en Dordogne : polos, t-shirts, 
       {% for item in broderie.galerie_cadeau %}
       <figure class="galerie__item">
         <img src="{{ item.image }}" alt="{{ item.legende }}" loading="lazy">
-        <figcaption>{{ item.legende }}</figcaption>
       </figure>
       {% endfor %}
     </div>

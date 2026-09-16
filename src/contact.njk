@@ -49,11 +49,16 @@ description: "Contactez Au Fil des Petites Mains à Campagne (24260), Dordogne. 
     <span class="script" style="font-size:1.7rem">{{ contact.carte_script }}</span>
     <h2>{{ contact.carte_titre }}</h2>
     <p class="lead" style="max-width:640px;margin:0 auto 26px">{{ contact.carte_texte }}</p>
+    {% set lat = contact.carte_latitude %}
+    {% set lon = contact.carte_longitude %}
     <div class="box" style="padding:0;overflow:hidden">
       <iframe
-        title="Carte — Campagne, Dordogne"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=0.90%2C44.85%2C0.99%2C44.91&layer=mapnik&marker=44.883%2C0.945"
+        title="Carte — atelier Au Fil des Petites Mains à Campagne, Dordogne"
+        src="https://www.openstreetmap.org/export/embed.html?bbox={{ lon - 0.012 }}%2C{{ lat - 0.006 }}%2C{{ lon + 0.012 }}%2C{{ lat + 0.006 }}&layer=mapnik&marker={{ lat }}%2C{{ lon }}"
         style="width:100%;height:360px;border:0" loading="lazy"></iframe>
     </div>
+    <p style="margin-top:18px">
+      <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query={{ lat }}%2C{{ lon }}" target="_blank" rel="noopener">Itinéraire avec Google Maps</a>
+    </p>
   </div>
 </section>

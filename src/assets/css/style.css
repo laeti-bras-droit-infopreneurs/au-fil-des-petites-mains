@@ -510,6 +510,25 @@ h3 { font-size: 1.5rem; }
   margin: 10px 0 30px;
 }
 
+/* ---------- Photo principale + médaillon (retouches) ---------- */
+.duo-photos { position: relative; padding: 0 0 48px 0; }
+.duo-photos__principale { width: 100%; }
+.duo-photos__medaillon {
+  position: absolute;
+  right: -18px;
+  bottom: 0;
+  width: 38%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 6px solid #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(139, 92, 96, .25);
+  max-width: 100%;
+}
+@media (max-width: 600px) {
+  .duo-photos__medaillon { right: 8px; width: 42%; }
+}
+
 /* ---------- Image de grille tarifaire (cours) ---------- */
 .tarifs-image {
   max-width: 640px;

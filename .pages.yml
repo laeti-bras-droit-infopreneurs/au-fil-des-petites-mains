@@ -67,7 +67,11 @@ content:
     fields:
       - { name: titre, label: "Titre de la page", type: string }
       - { name: entete_script, label: "Sous-titre calligraphié", type: string }
-      - { name: image, label: "Photo", type: image }
+      - { name: image, label: "Photo principale", type: image }
+      - name: image_secondaire
+        label: "Petite photo en médaillon (facultatif)"
+        description: "Posée en petit dans le coin de la photo principale. Laisse vide pour ne rien afficher."
+        type: image
       - { name: intro_titre, label: "Titre d'introduction", type: string }
       - { name: paragraphes, label: "Texte de présentation (un paragraphe par ligne)", type: text, list: true }
       - { name: contact_note, label: "Phrase mise en avant sous le tableau", type: string }
@@ -114,7 +118,7 @@ content:
         list: true
         fields:
           - { name: image, label: "Photo", type: image }
-          - { name: legende, label: "Légende (sert aussi au référencement)", type: string }
+          - { name: legende, label: "Description (non affichée, sert au référencement)", type: string }
       - { name: galerie_cadeau_titre, label: "Galerie cadeaux — titre", type: string }
       - { name: galerie_cadeau_texte, label: "Galerie cadeaux — texte", type: text }
       - name: galerie_cadeau
@@ -123,7 +127,7 @@ content:
         list: true
         fields:
           - { name: image, label: "Photo", type: image }
-          - { name: legende, label: "Légende (sert aussi au référencement)", type: string }
+          - { name: legende, label: "Description (non affichée, sert au référencement)", type: string }
       - { name: tarifs_titre, label: "Tarifs — titre", type: string }
       - { name: tarifs, label: "Tarifs — principes (liste)", type: text, list: true }
       - { name: tarifs_exemple, label: "Tarifs — exemple chiffré", type: text }
@@ -223,6 +227,14 @@ content:
       - { name: carte_script, label: "Carte — mot calligraphié", type: string }
       - { name: carte_titre, label: "Carte — titre", type: string }
       - { name: carte_texte, label: "Carte — texte (adresse, accès)", type: text }
+      - name: carte_latitude
+        label: "Carte — latitude de l'atelier"
+        description: "Ne modifie qu'en cas de déménagement. Clic droit sur le lieu dans Google Maps : le premier chiffre affiché est la latitude (ex. 44.885312)."
+        type: number
+      - name: carte_longitude
+        label: "Carte — longitude de l'atelier"
+        description: "Le second chiffre affiché par Google Maps (ex. 0.977438)."
+        type: number
 
   - name: cgv
     label: "📄 CGV"

@@ -1,7 +1,8 @@
 {
   "entete_script": "Un Service sur Mesure",
   "titre": "Retouches",
-  "image": "assets/img/retouches.jpg",
+  "image": "assets/img/accueil.jpg",
+  "image_secondaire": "assets/img/retouches.jpg",
   "intro_titre": "Un Service sur Mesure",
   "paragraphes": [
     "Avec mes prestations de services de retouches, je vous aide à donner une seconde vie à votre garde-robe.",
