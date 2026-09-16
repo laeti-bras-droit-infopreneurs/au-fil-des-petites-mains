@@ -33,7 +33,10 @@ content:
       - { name: hero_texte1, label: "Présentation — paragraphe 1", type: text }
       - { name: hero_texte2, label: "Présentation — paragraphe 2", type: text }
       - { name: hero_texte3, label: "Présentation — paragraphe 3", type: text }
-      - { name: hero_image, label: "Photo principale", type: image }
+      - name: hero_image
+        label: "Photo de fond du bandeau"
+        description: "S'affiche sur la moitié droite du bandeau d'accueil. Privilégie une photo où le sujet est au centre ou à droite, pour qu'il ne passe pas sous le texte."
+        type: image
       - { name: services_titre, label: "Section services — titre", type: string }
       - name: services
         label: "Les 3 services (cartes cliquables)"

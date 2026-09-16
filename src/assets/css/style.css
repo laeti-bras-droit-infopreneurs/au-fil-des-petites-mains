@@ -214,6 +214,48 @@ h3 { font-size: 1.5rem; }
 }
 .hero__actions { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
 
+/* Variante : photo en fond sur la moitié droite, fondue dans le crème */
+.hero--photo { padding: 96px 0 104px; min-height: 620px; display: flex; align-items: center; }
+.hero--photo::after { display: none; }
+.hero--photo .container { display: block; width: 100%; }
+.hero--photo .hero__text { max-width: 540px; }
+.hero__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 58%;
+}
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 40% 60%;
+  max-width: 100%;
+}
+.hero__photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, #fcefeb 0%, rgba(252, 239, 235, .55) 16%, rgba(252, 239, 235, 0) 34%);
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .hero--photo { display: block; min-height: 0; padding: 0 0 56px; }
+  .hero__photo {
+    position: relative;
+    width: 100%;
+    height: 340px;
+  }
+  .hero__photo img { object-position: 45% 72%; }
+  .hero__photo::before {
+    background: linear-gradient(180deg, rgba(252, 239, 235, 0) 62%, #fcefeb 100%);
+  }
+  .hero--photo .hero__text { max-width: none; padding-top: 30px; }
+}
+
 /* ---------- Horaires ---------- */
 .hours {
   background: var(--aubergine);
