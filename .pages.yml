@@ -235,6 +235,10 @@ content:
         label: "Carte — longitude de l'atelier"
         description: "Le second chiffre affiché par Google Maps (ex. 0.977438)."
         type: number
+      - name: fiche_google
+        label: "Lien de la fiche Google"
+        description: "Lien de partage de la fiche Google (bouton « Partager » dans Google Maps). Laisse vide pour un simple itinéraire vers les coordonnées."
+        type: string
 
   - name: cgv
     label: "📄 CGV"

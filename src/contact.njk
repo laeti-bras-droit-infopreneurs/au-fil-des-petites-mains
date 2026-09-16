@@ -58,7 +58,11 @@ description: "Contactez Au Fil des Petites Mains à Campagne (24260), Dordogne. 
         style="width:100%;height:360px;border:0" loading="lazy"></iframe>
     </div>
     <p style="margin-top:18px">
+      {% if contact.fiche_google %}
+      <a class="btn btn--ghost" href="{{ contact.fiche_google }}" target="_blank" rel="noopener">Voir la fiche Google : itinéraire et avis</a>
+      {% else %}
       <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query={{ lat }}%2C{{ lon }}" target="_blank" rel="noopener">Itinéraire avec Google Maps</a>
+      {% endif %}
     </p>
   </div>
 </section>
