@@ -19,6 +19,7 @@ description: "Contactez Au Fil des Petites Mains à Campagne (24260), Dordogne. 
       <p><strong>{{ site.proprietaire }}</strong><br>
       {{ site.adresse_ligne1 }}<br>
       {{ site.adresse_ligne2 }}</p>
+      {% if site.adresse_rdv %}<p class="adresse-rdv">{{ site.adresse_rdv }}</p>{% endif %}
       <p>✉ <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
       ☎ <a href="tel:{{ site.telephone_lien }}">{{ site.telephone }}</a></p>
 
@@ -48,7 +49,8 @@ description: "Contactez Au Fil des Petites Mains à Campagne (24260), Dordogne. 
   <div class="container center">
     <span class="script" style="font-size:1.7rem">{{ contact.carte_script }}</span>
     <h2>{{ contact.carte_titre }}</h2>
-    <p class="lead" style="max-width:640px;margin:0 auto 26px">{{ contact.carte_texte }}</p>
+    <p class="lead" style="max-width:640px;margin:0 auto 8px">{{ contact.carte_texte }}</p>
+    {% if site.adresse_rdv %}<p class="adresse-rdv" style="margin:0 auto 26px">{{ site.adresse_rdv }}</p>{% endif %}
     {% set lat = contact.carte_latitude %}
     {% set lon = contact.carte_longitude %}
     <div class="box" style="padding:0;overflow:hidden">

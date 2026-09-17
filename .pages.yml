@@ -16,6 +16,10 @@ content:
       - { name: telephone_lien, label: "Téléphone (format international, ex. +33607773886)", type: string }
       - { name: adresse_ligne1, label: "Adresse — ligne 1", type: string }
       - { name: adresse_ligne2, label: "Adresse — ligne 2 (code postal, ville)", type: string }
+      - name: adresse_rdv
+        label: "Rappel sous l'adresse"
+        description: "Affiché en gras sous chaque adresse du site (pied de page, page Contact). Laisse vide pour le masquer."
+        type: string
       - { name: instagram, label: "Lien Instagram", type: string }
       - { name: facebook, label: "Lien Facebook", type: string }
       - { name: horaires_semaine, label: "Horaires en semaine", type: string }
@@ -165,6 +169,10 @@ content:
       - { name: conseils_titre, label: "Conseils — titre", type: string }
       - { name: conseils, label: "Conseils — points", type: text, list: true }
       - { name: tarifs_titre, label: "Tarifs — titre", type: string }
+      - name: tarifs_rdv
+        label: "Tarifs — mention en grand (ex. Sur rendez-vous)"
+        description: "Affichée en grand dans un bandeau aubergine sous le titre des tarifs. Laisse vide pour la masquer."
+        type: string
       - name: tarifs_image
         label: "Tarifs — image de la grille (JPG ou PNG)"
         description: "Facultatif. Dépose ici la photo ou l'image de ta grille tarifaire quand elle sera prête : elle s'affichera automatiquement sous le titre. Laisse vide pour ne rien afficher."

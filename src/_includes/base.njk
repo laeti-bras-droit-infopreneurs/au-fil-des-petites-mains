@@ -58,6 +58,7 @@
           <p>{{ site.proprietaire }}<br>
           {{ site.adresse_ligne1 }}<br>
           {{ site.adresse_ligne2 }}</p>
+          {% if site.adresse_rdv %}<p class="adresse-rdv">{{ site.adresse_rdv }}</p>{% endif %}
           <p>☎ <a href="tel:{{ site.telephone_lien }}">{{ site.telephone }}</a><br>
           ✉ <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         </div>

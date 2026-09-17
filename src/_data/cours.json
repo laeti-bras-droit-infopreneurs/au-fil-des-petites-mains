@@ -9,7 +9,7 @@
   "possibilites": [
     "Si vous optez pour votre projet sur lequel vous bloquez, que ce soit la réalisation d'accessoires ou d'un habit, je serai à vos côtés pour vous aider.",
     "Si votre besoin est de prendre en main votre machine à coudre ou votre surjeteuse, c'est possible en cours individuel. Parce que vous êtes débutante, je serai 100 % avec vous.",
-    "Si vous optez pour un projet que je propose, vous repartez avec le tutoriel."
+    "Si vous optez pour un projet que je propose : tutos fournis à la fin du cours."
   ],
   "projets_titre": "Vous avez le choix entre…",
   "projets_note": "À vous de choisir !",
@@ -73,6 +73,7 @@
   ],
   "tarifs_titre": "TARIFS EN COURS DE MODIFICATION…",
   "tarifs_image": "",
+  "tarifs_rdv": "Sur rendez-vous",
   "tarifs_note": "Pensez à la carte cadeau !",
   "horaires_titre": "Horaires",
   "groupe_titre": "Cours collectifs",

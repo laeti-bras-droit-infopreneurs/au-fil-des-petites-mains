@@ -93,6 +93,9 @@ description: "Cours et ateliers de couture à Campagne (à 8 min du Bugue) pour 
   <div class="container">
     <div class="center" style="margin-bottom:10px">
       <h2>{{ cours.tarifs_titre }}</h2>
+      {% if cours.tarifs_rdv %}
+      <p class="rdv-gros">{{ cours.tarifs_rdv }}</p>
+      {% endif %}
       {% if cours.tarifs_image %}
       <img class="tarifs-image" src="{{ cours.tarifs_image }}" alt="Grille tarifaire des cours de couture">
       {% endif %}
