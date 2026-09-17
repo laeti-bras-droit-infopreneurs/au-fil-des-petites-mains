@@ -1,0 +1,26 @@
+---
+pagination:
+  data: redirections
+  size: 1
+  alias: r
+permalink: "{{ r.de }}/index.html"
+eleventyExcludeFromCollections: true
+---
+{#- Anciennes adresses du site Wix : GitHub Pages ne gère pas les redirections serveur,
+    on publie donc une page qui renvoie immédiatement vers la nouvelle adresse. -#}
+{%- set remonter = "" -%}
+{%- for segment in r.de.split("/") -%}{%- set remonter = remonter + "../" -%}{%- endfor -%}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Page déplacée | {{ site.nom }}</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{ site.url }}/{{ r.vers }}">
+  <meta http-equiv="refresh" content="0; url={{ remonter }}{{ r.vers }}">
+  <script>location.replace("{{ remonter }}{{ r.vers }}");</script>
+</head>
+<body>
+  <p>Cette page a déménagé : <a href="{{ remonter }}{{ r.vers }}">continuer vers la nouvelle page</a>.</p>
+</body>
+</html>

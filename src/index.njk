@@ -90,3 +90,37 @@ description: "Entrez dans l'univers de la couture avec Au Fil des Petites Mains 
     </div>
   </div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": {{ site.nom | dump | safe }},
+  "description": {{ description | dump | safe }},
+  "url": {{ (site.url + "/") | dump | safe }},
+  "image": {{ (site.url + "/" + accueil.hero_image) | dump | safe }},
+  "logo": {{ (site.url + "/assets/img/logo.png") | dump | safe }},
+  "telephone": {{ site.telephone_lien | dump | safe }},
+  "email": {{ site.email | dump | safe }},
+  "founder": { "@type": "Person", "name": "Aurélia Bordier" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ site.adresse_ligne1 | dump | safe }},
+    "postalCode": "24260",
+    "addressLocality": "Campagne",
+    "addressRegion": "Dordogne",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": {{ contact.carte_latitude }},
+    "longitude": {{ contact.carte_longitude }}
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:30", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:30", "closes": "12:30" }
+  ],
+  "areaServed": ["Campagne", "Le Bugue", "Saint-Cyprien", "Siorac-en-Périgord", "Dordogne"],
+  "sameAs": [{{ site.instagram | dump | safe }}, {{ site.facebook | dump | safe }}]
+}
+</script>
