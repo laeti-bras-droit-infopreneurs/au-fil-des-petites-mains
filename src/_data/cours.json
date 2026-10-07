@@ -53,9 +53,14 @@
         {
           "duree": "4 heures",
           "tarif": "88 € (soit 22 €/heure)"
+        },
+        {},
+        {
+          "duree": "photo"
         }
       ]
-    }
+    },
+    {}
   ],
   "projets_titre": "Vous avez le choix entre…",
   "projets": [
