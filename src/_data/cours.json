@@ -12,24 +12,48 @@
     "Si vous optez pour un projet que je propose : tutos fournis à la fin du cours."
   ],
   "tarifs_cours_script": "Mes tarifs",
-  "tarifs_cours_titre": "Tarifs des cours",
+  "tarifs_cours_titre": "Tarifs des cours 2026",
   "tarifs_cours": [
     {
       "titre": "Pack cours collectifs (3 pers.) de 3 heures",
       "lignes": [
-        { "duree": "3 heures", "tarif": "45 € (soit 15 €/heure)" },
-        { "duree": "6 heures", "tarif": "84 € (soit 14 €/heure)" },
-        { "duree": "9 heures", "tarif": "117 € (soit 13 €/heure)" },
-        { "duree": "12 heures", "tarif": "144 € (soit 12 €/heure)" }
+        {
+          "duree": "3 heures",
+          "tarif": "45 € (soit 15 €/heure)"
+        },
+        {
+          "duree": "6 heures",
+          "tarif": "84 € (soit 14 €/heure)"
+        },
+        {
+          "duree": "9 heures",
+          "tarif": "117 € (soit 13 €/heure)"
+        },
+        {
+          "duree": "12 heures",
+          "tarif": "144 € (soit 12 €/heure)"
+        }
       ]
     },
     {
       "titre": "Pack cours individuels",
       "lignes": [
-        { "duree": "1 heure", "tarif": "32 €" },
-        { "duree": "2 heures", "tarif": "60 € (soit 30 €/heure)" },
-        { "duree": "3 heures", "tarif": "78 € (soit 26 €/heure)" },
-        { "duree": "4 heures", "tarif": "88 € (soit 22 €/heure)" }
+        {
+          "duree": "1 heure",
+          "tarif": "32 €"
+        },
+        {
+          "duree": "2 heures",
+          "tarif": "60 € (soit 30 €/heure)"
+        },
+        {
+          "duree": "3 heures",
+          "tarif": "78 € (soit 26 €/heure)"
+        },
+        {
+          "duree": "4 heures",
+          "tarif": "88 € (soit 22 €/heure)"
+        }
       ]
     }
   ],
@@ -93,8 +117,6 @@
     "C'est l'occasion peut-être de faire vos fonds d'armoire et de trouver des pépites de vieux habits pour les recycler et en récupérer le tissu ! Cependant, attention aux tissus trop fins comme certains draps !",
     "Arrivez 5 minutes avant le début du cours : le temps de vous installer confortablement."
   ],
-  "tarifs_titre": "",
-  "tarifs_image": "",
   "tarifs_rdv": "Sur rendez-vous",
   "tarifs_note": "Pensez à la carte cadeau !",
   "horaires_titre": "Horaires",
