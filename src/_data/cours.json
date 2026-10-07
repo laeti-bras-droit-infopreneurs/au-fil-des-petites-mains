@@ -19,19 +19,19 @@
       "lignes": [
         {
           "duree": "3 heures",
-          "tarif": "45 € (soit 15 €/heure)"
+          "tarif": "48 € (soit 16 €/heure)"
         },
         {
           "duree": "6 heures",
-          "tarif": "84 € (soit 14 €/heure)"
+          "tarif": "90 € (soit 15 €/heure)"
         },
         {
           "duree": "9 heures",
-          "tarif": "117 € (soit 13 €/heure)"
+          "tarif": "126 € (soit 14 €/heure)"
         },
         {
           "duree": "12 heures",
-          "tarif": "144 € (soit 12 €/heure)"
+          "tarif": "156 € (soit 13 €/heure)"
         }
       ]
     },
