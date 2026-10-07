@@ -1,6 +1,6 @@
 {
-  "entete_script": "À Campagne, à 8 min du Bugue",
   "titre": "Cours",
+  "entete_script": "À Campagne, à 8 min du Bugue",
   "image": "assets/img/cours.jpg",
   "intro_paragraphes": [
     "Que vous soyez un adulte cherchant à maîtriser l'art de la couture ou un parent dont l'enfant souhaite s'initier à ce savoir-faire ancestral, j'aurai plaisir à vous accompagner dans votre projet.",
@@ -12,11 +12,10 @@
     "Si vous optez pour un projet que je propose : tutos fournis à la fin du cours."
   ],
   "projets_titre": "Vous avez le choix entre…",
-  "projets_note": "À vous de choisir !",
   "projets": [
     {
       "titre": "Le tote-bag non doublé",
-      "image": "assets/img/projets/tote-bag-cours-couture-dordogne.jpg"
+      "image": "assets/img/Design sans titre (7).png"
     },
     {
       "titre": "La pochette à boutons",
@@ -27,6 +26,7 @@
       "image": "assets/img/projets/housse-coussin-cours-couture-dordogne.jpg"
     }
   ],
+  "projets_note": "À vous de choisir !",
   "materiel_titre": "Vous aurez besoin de…",
   "materiel": [
     {
@@ -72,7 +72,6 @@
     "Arrivez 5 minutes avant le début du cours : le temps de vous installer confortablement."
   ],
   "tarifs_titre": "TARIFS EN COURS DE MODIFICATION…",
-  "tarifs_image": "",
   "tarifs_rdv": "Sur rendez-vous",
   "tarifs_note": "Pensez à la carte cadeau !",
   "horaires_titre": "Horaires",
@@ -83,8 +82,7 @@
   "temoignages_titre": "Témoignages",
   "temoignages": [
     {
-      "texte": "J'ai eu ma première leçon surjeteuse ce matin. Les explications sont claires, utiles. Aurélia m'a montré comment enfiler, régler la tension, la largeur et la longueur du fil, changer les aiguilles. Bref un cours complet sur mes plus grosses failles et ceci dans une ambiance détendue laissant place au bavardage. À consulter rapidement si vous avez des soucis d'utilisation, de réglage, de vos machines à coudre, à surjeter. Merci Aurélia.",
-      "auteur": ""
+      "texte": "J'ai eu ma première leçon surjeteuse ce matin. Les explications sont claires, utiles. Aurélia m'a montré comment enfiler, régler la tension, la largeur et la longueur du fil, changer les aiguilles. Bref un cours complet sur mes plus grosses failles et ceci dans une ambiance détendue laissant place au bavardage. À consulter rapidement si vous avez des soucis d'utilisation, de réglage, de vos machines à coudre, à surjeter. Merci Aurélia."
     },
     {
       "texte": "Je suis devenue de plus en plus autonome et confiante devant ma machine à coudre et j'ai pu me lancer dans des projets plus complexes. Merci à Aurélia qui a su faire preuve de patience et de pédagogie tout au long de nos ateliers !",
