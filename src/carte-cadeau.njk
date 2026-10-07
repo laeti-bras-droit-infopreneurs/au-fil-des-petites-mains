@@ -30,4 +30,9 @@ description: "Offrez une carte cadeau Au Fil des Petites Mains : retouches, brod
       <a class="btn" href="contact.html">Commander une carte cadeau</a>
     </div>
   </div>
+  {% if cartecadeau.image_secondaire %}
+  <div class="container">
+    <img class="tarifs-image" src="{{ cartecadeau.image_secondaire }}" alt="Carte cadeau Au Fil des Petites Mains">
+  </div>
+  {% endif %}
 </section>

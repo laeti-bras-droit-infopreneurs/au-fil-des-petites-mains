@@ -658,6 +658,21 @@ h3 { font-size: 1.5rem; }
   margin: 0;
 }
 
+/* Grille tarifaire des cours : plusieurs tableaux empilés, titre en bandeau */
+.tarifs--cours { max-width: 640px; margin-bottom: 26px; }
+.tarifs--cours:last-child { margin-bottom: 0; }
+.tarifs--cours caption {
+  caption-side: top;
+  background: var(--aubergine);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .3px;
+  padding: 14px 18px;
+  text-align: center;
+}
+.tarifs--cours .tarifs__col-prix { white-space: normal; width: auto; }
+.tarifs--cours td:first-child { font-weight: 600; }
+
 @media (max-width: 600px) {
   .tarifs__table { font-size: .9rem; }
   .tarifs__table th,

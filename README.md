@@ -2,7 +2,7 @@
 
 Site vitrine de l'atelier de couture d'Aurélia Bordier à Campagne (Dordogne) : retouches, broderies personnalisées et cours de couture.
 
-🌐 **Site en ligne :** https://laeti-bras-droit-infopreneurs.github.io/au-fil-des-petites-mains/
+🌐 **Site en ligne :** https://www.aufildespetitesmains.fr
 
 ## Fonctionnement
 

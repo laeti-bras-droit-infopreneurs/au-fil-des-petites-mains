@@ -27,6 +27,33 @@ description: "Cours et ateliers de couture à Campagne (à 8 min du Bugue) pour 
   </div>
 </section>
 
+<!-- Grille tarifaire -->
+{% if cours.tarifs_cours.length %}
+<section class="section section--cream">
+  <div class="container">
+    <div class="center" style="margin-bottom:30px">
+      {% if cours.tarifs_cours_script %}<span class="script" style="font-size:1.7rem">{{ cours.tarifs_cours_script }}</span>{% endif %}
+      <h2>{{ cours.tarifs_cours_titre }}</h2>
+    </div>
+    {% for groupe in cours.tarifs_cours %}
+    <div class="tarifs tarifs--cours">
+      <table class="tarifs__table">
+        <caption>{{ groupe.titre }}</caption>
+        <tbody>
+          {% for ligne in groupe.lignes %}
+          <tr>
+            <td>{{ ligne.duree }}</td>
+            <td class="tarifs__col-prix">{{ ligne.tarif }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <!-- Projets proposés -->
 <section class="section section--pink">
   <div class="container">
@@ -92,7 +119,7 @@ description: "Cours et ateliers de couture à Campagne (à 8 min du Bugue) pour 
 <section class="section section--pink">
   <div class="container">
     <div class="center" style="margin-bottom:10px">
-      <h2>{{ cours.tarifs_titre }}</h2>
+      {% if cours.tarifs_titre %}<h2>{{ cours.tarifs_titre }}</h2>{% endif %}
       {% if cours.tarifs_rdv %}
       <p class="rdv-gros">{{ cours.tarifs_rdv }}</p>
       {% endif %}
