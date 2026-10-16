@@ -2,7 +2,6 @@
   "titre": "Cours",
   "entete_script": "À Campagne, à 8 min du Bugue",
   "image": "assets/img/3 de dos.jpeg",
-  "image_secondaire": "",
   "intro_paragraphes": [
     "Que vous soyez un adulte cherchant à maîtriser l'art de la couture ou un parent dont l'enfant souhaite s'initier à ce savoir-faire ancestral, j'aurai plaisir à vous accompagner dans votre projet.",
     "Plusieurs possibilités vous sont proposées…"
@@ -62,6 +61,7 @@
     },
     {}
   ],
+  "image_secondaire": "assets/img/carte cadeau.jpeg",
   "projets_titre": "Vous avez le choix entre…",
   "projets": [
     {
