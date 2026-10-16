@@ -27,18 +27,18 @@
   "agenda_image": "assets/img/cours novembre.png",
   "agenda_lignes": [
     {
-      "texte": "Nouvelle rentrée : nouvelles dates !",
+      "texte": " Pour le mois d'Octobre : il reste 1 place le 24 Octobre",
       "souligne": true
     },
     {
+      "texte": "Nouvelles dates pour Novembre",
       "souligne": false
     },
     {
-      "texte": "Puis pour le mois d'Octobre :",
+      "texte": "le 7 et 21 Novembre",
       "souligne": true
     },
     {
-      "texte": "Il reste 1 place pour le 24 Octobre.",
       "souligne": false
     }
   ],
