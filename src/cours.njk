@@ -25,15 +25,10 @@ description: "Cours et ateliers de couture à Campagne (à 8 min du Bugue) pour 
       </ul>
     </div>
   </div>
-  {% if cours.image_secondaire %}
-  <div class="container">
-    <img class="tarifs-image" src="{{ cours.image_secondaire }}" alt="Cours de couture à Campagne, Dordogne">
-  </div>
-  {% endif %}
 </section>
 
 <!-- Grille tarifaire -->
-{% if cours.tarifs_cours.length %}
+{% if cours.tarifs_cours.length or cours.image_secondaire %}
 <section class="section section--cream">
   <div class="container">
     <div class="center" style="margin-bottom:30px">
@@ -55,6 +50,9 @@ description: "Cours et ateliers de couture à Campagne (à 8 min du Bugue) pour 
       </table>
     </div>
     {% endfor %}
+    {% if cours.image_secondaire %}
+    <img class="tarifs-image" src="{{ cours.image_secondaire }}" alt="Cours de couture à Campagne, Dordogne">
+    {% endif %}
   </div>
 </section>
 {% endif %}

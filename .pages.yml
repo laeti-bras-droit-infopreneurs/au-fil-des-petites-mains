@@ -145,10 +145,6 @@ content:
       - { name: titre, label: "Titre de la page", type: string }
       - { name: entete_script, label: "Sous-titre calligraphié", type: string }
       - { name: image, label: "Photo", type: image }
-      - name: image_secondaire
-        label: "Photo supplémentaire (facultatif)"
-        description: "S'affiche centrée sous la photo principale et le texte. Laisse vide pour ne rien afficher."
-        type: image
       - { name: intro_paragraphes, label: "Introduction (un paragraphe par ligne)", type: text, list: true }
       - { name: possibilites, label: "Les possibilités proposées (liste)", type: text, list: true }
       - { name: tarifs_cours_script, label: "Grille des tarifs — mot calligraphié", type: string }
@@ -168,6 +164,10 @@ content:
             fields:
               - { name: duree, label: "Durée (ex. 3 heures)", type: string }
               - { name: tarif, label: "Tarif (ex. 45 € (soit 15 €/heure))", type: string }
+      - name: image_secondaire
+        label: "Photo supplémentaire sous les tarifs (facultatif)"
+        description: "S'affiche centrée sous les tableaux des tarifs. Laisse vide pour ne rien afficher."
+        type: image
       - { name: projets_titre, label: "Projets — titre", type: string }
       - name: projets
         label: "Les projets au choix"
