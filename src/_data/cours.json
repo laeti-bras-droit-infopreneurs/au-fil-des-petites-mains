@@ -53,13 +53,11 @@
         {
           "duree": "4 heures",
           "tarif": "88 € (soit 22 €/heure)"
-        },
-        {},
-        {},
-        {}
+        }
       ]
     }
   ],
+  "image_secondaire": "assets/img/Design sans titre (8).png",
   "projets_titre": "Vous avez le choix entre…",
   "projets": [
     {
