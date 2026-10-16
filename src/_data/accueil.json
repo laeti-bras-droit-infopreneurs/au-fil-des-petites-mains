@@ -1,6 +1,6 @@
 {
-  "hero_script": "Artisane Couturière à Campagne (Dordogne)",
   "hero_titre": "Au Fil des Petites Mains",
+  "hero_script": "Artisane Couturière à Campagne (Dordogne)",
   "hero_texte1": "Bienvenue dans mon atelier de couture à Campagne en Dordogne, à quelques kilomètres du Bugue.",
   "hero_texte2": "Je suis Aurélia, Artisane Couturière. Ma petite entreprise a pris vie en juillet 2022.",
   "hero_texte3": "Si vous êtes à la recherche d'une broderie numérique personnalisée pour vous ou votre entreprise, de retouches de vêtements, ou encore d'atelier de couture, vous êtes au bon endroit !",
@@ -24,12 +24,23 @@
     }
   ],
   "agenda_titre": "Agenda",
-  "agenda_image": "assets/img/agenda-cours.jpg",
+  "agenda_image": "assets/img/cours novembre.png",
   "agenda_lignes": [
-    { "texte": "Nouvelle rentrée : nouvelles dates !", "souligne": true },
-    { "texte": "Samedi 12 et 26 Septembre", "souligne": false },
-    { "texte": "Puis pour le mois d'Octobre :", "souligne": true },
-    { "texte": "Les samedis 10 et 24 Octobre.", "souligne": false }
+    {
+      "texte": "Nouvelle rentrée : nouvelles dates !",
+      "souligne": true
+    },
+    {
+      "souligne": false
+    },
+    {
+      "texte": "Puis pour le mois d'Octobre :",
+      "souligne": true
+    },
+    {
+      "texte": "Il reste 1 place pour le 24 Octobre.",
+      "souligne": false
+    }
   ],
   "agenda_note": "Les cours individuels sont toujours sur RDV en semaine.",
   "labels_titre": "Un savoir-faire artisanal et responsable",
