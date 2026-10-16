@@ -58,6 +58,8 @@
     }
   ],
   "image_secondaire": "assets/img/Offrez une carte cadeau.png",
+  "offrir_bouton": "Je veux offrir des cours de couture",
+  "offrir_lien": "carte-cadeau.html",
   "projets_titre": "Vous avez le choix entre…",
   "projets": [
     {

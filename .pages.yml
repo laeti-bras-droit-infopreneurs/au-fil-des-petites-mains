@@ -168,6 +168,14 @@ content:
         label: "Photo supplémentaire sous les tarifs (facultatif)"
         description: "S'affiche centrée sous les tableaux des tarifs. Laisse vide pour ne rien afficher."
         type: image
+      - name: offrir_bouton
+        label: "Bouton « offrir » sous les tarifs — texte"
+        description: "Bouton centré sous les tarifs (et la photo), qui mène à la page Carte cadeau. Laisse vide pour le masquer."
+        type: string
+      - name: offrir_lien
+        label: "Bouton « offrir » — page ou lien"
+        description: "Par défaut : carte-cadeau.html"
+        type: string
       - { name: projets_titre, label: "Projets — titre", type: string }
       - name: projets
         label: "Les projets au choix"

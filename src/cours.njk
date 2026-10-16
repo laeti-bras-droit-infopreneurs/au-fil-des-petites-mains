@@ -53,6 +53,9 @@ description: "Cours et ateliers de couture à Campagne (à 8 min du Bugue) pour 
     {% if cours.image_secondaire %}
     <img class="tarifs-image" src="{{ cours.image_secondaire }}" alt="Cours de couture à Campagne, Dordogne">
     {% endif %}
+    {% if cours.offrir_bouton %}
+    <p class="center" style="margin-top:28px"><a class="btn" href="{{ cours.offrir_lien or 'carte-cadeau.html' }}">{{ cours.offrir_bouton }}</a></p>
+    {% endif %}
   </div>
 </section>
 {% endif %}
