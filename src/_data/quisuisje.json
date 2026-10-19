@@ -1,6 +1,6 @@
 {
-  "entete_script": "Faisons connaissance",
   "titre": "Qui suis-je ?",
+  "entete_script": "Faisons connaissance",
   "image": "assets/img/aurelia-bordier.avif",
   "intro_titre": "Qui se cache derrière Au Fil des Petites Mains ?",
   "paragraphes": [
@@ -20,8 +20,7 @@
   "engagements_titre": "Mes engagements",
   "engagements": [
     "Artisane de l'autonomie avec la Chambre des Métiers et de l'Artisanat",
-    "Membre de l'UNACAC",
-    "Mon passage sur France Bleu Périgord",
-    "Mon atelier couture juste à côté de mon domicile. J'ai le plaisir de vous y accueillir !"
+    "Membre de l'UNACAC Union Nationale Artisanale des Couturières et des Activités Connexes.",
+    "Mon passage sur France Bleu Périgord"
   ]
 }
