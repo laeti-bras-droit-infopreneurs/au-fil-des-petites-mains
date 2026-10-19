@@ -78,6 +78,15 @@
   "materiel_titre": "Vous aurez besoin de…",
   "materiel": [
     {
+      "titre": "Tote bag non doublé",
+      "items": [
+        "Tissu (environ 200 à 400 gr/m²)",
+        "Dimensions : en fonction de votre souhait !",
+        "Anses",
+        "Pour information : la plupart du temps, en magasin de tissu, les coupons sont coupés au minimum 50 cm de haut sur la laize (largeur du tissu). Vous pouvez donc partir sur 2 coupons de 50 cm de haut x 40 de large (marge de couture et ourlets compris), par exemple."
+      ]
+    },
+    {
       "titre": "Pochette à boutons",
       "items": [
         "Boutons pressions x 2 (des boutons pression à coudre conviennent aussi très bien)",
@@ -85,15 +94,6 @@
         "Tissu doublure : même dimension que le tissu principal",
         "Grammage des tissus : de 150 à 350 gr/m² environ",
         "Thermocollant : optionnel (en fonction de l'épaisseur du tissu), mêmes dimensions"
-      ]
-    },
-    {
-      "titre": "Tote bag non doublé",
-      "items": [
-        "Tissu (environ 200 à 400 gr/m²)",
-        "Dimensions : en fonction de votre souhait !",
-        "Anses",
-        "Pour information : la plupart du temps, en magasin de tissu, les coupons sont coupés au minimum 50 cm de haut sur la laize (largeur du tissu). Vous pouvez donc partir sur 2 coupons de 50 cm de haut x 40 de large (marge de couture et ourlets compris), par exemple."
       ]
     },
     {
