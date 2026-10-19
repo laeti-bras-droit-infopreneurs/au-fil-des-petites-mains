@@ -1,11 +1,18 @@
 {
-  "entete_script": "Faites plaisir",
   "titre": "Carte cadeau",
+  "entete_script": "Faites plaisir",
   "image": "assets/img/cours.jpg",
-  "image_secondaire": "",
   "intro_titre": "Offrez un moment de couture",
-  "intro_texte": "Envie de faire plaisir ? Offrez une carte cadeau Au Fil des Petites Mains ! Le·la bénéficiaire choisira la prestation qui lui fait envie : un cours de couture, une broderie personnalisée ou des retouches sur mesure.",
+  "intro_texte": "Envie de faire plaisir ? Offrez une carte cadeau Au Fil des Petites Mains ! Le·la bénéficiaire choisira la prestation qui lui fait envie pour: DES COURS DE COUTURE, UNE BRODERIE PERSONNALISEE, DES RETOUCHES.",
   "montants_titre": "Montants disponibles",
-  "montants": ["15 €", "20 €", "25 €", "30 €", "40 €", "50 €", "Autre montant"],
+  "montants": [
+    "15 €",
+    "20 €",
+    "25 €",
+    "30 €",
+    "40 €",
+    "50 €",
+    "Autre montant"
+  ],
   "note": "Pour commander votre carte cadeau, contactez-moi par téléphone au 06.07.77.38.86 ou par e-mail : nous conviendrons ensemble du montant et du mode de remise."
 }
