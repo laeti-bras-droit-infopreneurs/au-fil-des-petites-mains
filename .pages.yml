@@ -94,6 +94,15 @@ content:
       - { name: bonus_titre, label: "Bonus Réparation — titre", type: string }
       - { name: bonus_texte1, label: "Bonus Réparation — paragraphe 1", type: text }
       - { name: bonus_texte2, label: "Bonus Réparation — paragraphe 2", type: text }
+      - { name: galerie_titre, label: "Galerie photos — titre (facultatif)", type: string }
+      - name: galerie
+        label: "Galerie photos (au-dessus de l'atelier)"
+        description: "Ajoute autant de photos que tu veux avec le +. Laisse la liste vide pour masquer la galerie."
+        type: object
+        list: true
+        fields:
+          - { name: image, label: "Photo", type: image }
+          - { name: legende, label: "Description (non affichée, sert au référencement)", type: string }
       - { name: atelier_titre, label: "Atelier — titre", type: string }
       - { name: atelier_texte, label: "Atelier — texte", type: text }
 
@@ -147,6 +156,11 @@ content:
       - { name: image, label: "Photo", type: image }
       - { name: intro_paragraphes, label: "Introduction (un paragraphe par ligne)", type: text, list: true }
       - { name: possibilites, label: "Les possibilités proposées (liste)", type: text, list: true }
+      - { name: horaires_titre, label: "Horaires — titre", type: string }
+      - { name: groupe_titre, label: "Cours collectifs — titre", type: string }
+      - { name: groupe_texte, label: "Cours collectifs — horaires", type: text }
+      - { name: individuel_titre, label: "Cours individuels — titre", type: string }
+      - { name: individuel_texte, label: "Cours individuels — texte", type: text }
       - { name: tarifs_cours_script, label: "Grille des tarifs — mot calligraphié", type: string }
       - { name: tarifs_cours_titre, label: "Grille des tarifs — titre", type: string }
       - name: tarifs_cours
@@ -197,6 +211,15 @@ content:
       - { name: avant_items, label: "« Avant de couper » — points", type: text, list: true }
       - { name: conseils_titre, label: "Conseils — titre", type: string }
       - { name: conseils, label: "Conseils — points", type: text, list: true }
+      - { name: galerie_titre, label: "Galerie photos — titre (facultatif)", type: string }
+      - name: galerie
+        label: "Galerie photos (sous les conseils)"
+        description: "Ajoute autant de photos que tu veux avec le +. Laisse la liste vide pour masquer la galerie."
+        type: object
+        list: true
+        fields:
+          - { name: image, label: "Photo", type: image }
+          - { name: legende, label: "Description (non affichée, sert au référencement)", type: string }
       - { name: tarifs_titre, label: "Tarifs — titre", type: string }
       - name: tarifs_rdv
         label: "Tarifs — mention en grand (ex. Sur rendez-vous)"
@@ -207,11 +230,6 @@ content:
         description: "Facultatif. Dépose ici la photo ou l'image de ta grille tarifaire quand elle sera prête : elle s'affichera automatiquement sous le titre. Laisse vide pour ne rien afficher."
         type: image
       - { name: tarifs_note, label: "Tarifs — phrase calligraphiée (ex. Pensez à la carte cadeau !)", type: string }
-      - { name: horaires_titre, label: "Horaires — titre", type: string }
-      - { name: groupe_titre, label: "Cours collectifs — titre", type: string }
-      - { name: groupe_texte, label: "Cours collectifs — horaires", type: text }
-      - { name: individuel_titre, label: "Cours individuels — titre", type: string }
-      - { name: individuel_texte, label: "Cours individuels — texte", type: text }
       - { name: temoignages_titre, label: "Témoignages — titre", type: string }
       - name: temoignages
         label: "Témoignages d'élèves"

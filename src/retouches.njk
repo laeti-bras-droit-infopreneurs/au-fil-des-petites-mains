@@ -87,6 +87,26 @@ description: "Un service de retouches sur mesure à Campagne (Dordogne) : ourlet
   </div>
 </section>
 
+<!-- Galerie photos -->
+{% if retouches.galerie.length %}
+<section class="section section--cream">
+  <div class="container">
+    {% if retouches.galerie_titre %}
+    <div class="center" style="margin-bottom:34px">
+      <h2>{{ retouches.galerie_titre }}</h2>
+    </div>
+    {% endif %}
+    <div class="galerie">
+      {% for item in retouches.galerie %}
+      <figure class="galerie__item">
+        <img src="{{ item.image }}" alt="{{ item.legende or 'Retouches de vêtements à Campagne, Dordogne' }}" loading="lazy">
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="section">
   <div class="container center">
     <h2>{{ retouches.atelier_titre }}</h2>
