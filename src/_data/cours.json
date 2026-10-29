@@ -11,6 +11,10 @@
     "Si votre besoin est de PRENDRE EN MAIN VOTRE MACHINE à coudre ou votre surjeteuse, c'est possible en cours individuel. Parce que vous êtes débutante, je serai 100 % avec vous.",
     "Si vous optez pour un PROJET QUE JE PROPOSE, le tuto est fourni à la fin du cours. Les 3 projets différents vous sont proposés au bas de cette page."
   ],
+  "groupe_titre": "Cours collectifs",
+  "groupe_texte": "Deux samedis matin par mois, de 9h à 12h.",
+  "individuel_titre": "Cours individuels",
+  "individuel_texte": "Sur rendez-vous.",
   "tarifs_cours_titre": "Tarifs des cours ",
   "tarifs_cours": [
     {
@@ -119,12 +123,11 @@
     "C'est l'occasion peut-être de faire vos fonds d'armoire et de trouver des pépites de vieux habits pour les recycler et en récupérer le tissu ! Cependant, attention aux tissus trop fins comme certains draps !",
     "Arrivez 5 minutes avant le début du cours : le temps de vous installer confortablement."
   ],
-  "galerie_titre": "",
-  "galerie": [],
-  "groupe_titre": "Cours collectifs",
-  "groupe_texte": "Deux samedis matin par mois, de 9h à 12h.",
-  "individuel_titre": "Cours individuels",
-  "individuel_texte": "Sur rendez-vous.",
+  "galerie": [
+    {
+      "image": "assets/img/_Propriétaire Etoilys  (1).png"
+    }
+  ],
   "temoignages_titre": "Témoignages",
   "temoignages": [
     {
