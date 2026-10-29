@@ -124,7 +124,9 @@
     "Arrivez 5 minutes avant le début du cours : le temps de vous installer confortablement."
   ],
   "galerie": [
-    {}
+    {
+      "image": "assets/img/cours avril 2026.jpeg"
+    }
   ],
   "temoignages_titre": "Témoignages",
   "temoignages": [
