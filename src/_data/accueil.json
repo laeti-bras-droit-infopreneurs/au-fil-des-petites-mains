@@ -27,18 +27,19 @@
   "agenda_image": "assets/img/cours novembre.png",
   "agenda_lignes": [
     {
-      "texte": " Pour le mois d'Octobre : il reste 1 place le 24 Octobre",
+      "texte": " Pour le mois de Novembre:",
       "souligne": true
     },
     {
-      "texte": "Nouvelles dates pour Novembre",
+      "texte": "Il reste 1 place pour le 21 Novembre",
       "souligne": false
     },
     {
-      "texte": "le 7 et 21 Novembre",
+      "texte": "Pour les cours de Décembre",
       "souligne": true
     },
     {
+      "texte": "Il reste 1 place pour le 5 et le 19 Décembre",
       "souligne": false
     }
   ],
