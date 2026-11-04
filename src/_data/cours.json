@@ -125,7 +125,12 @@
   ],
   "galerie": [
     {
-      "image": "assets/img/cours avril 2026.jpeg"
+      "image": "assets/img/cours avril 2026.jpeg",
+      "legende": "Atelier de 3 personnes, chacunes a sa place pour coudre"
+    },
+    {
+      "image": "assets/img/cours du 17 janvier 2026.jpeg",
+      "legende": "Atelier de 3 personnes, chaucunes a sa place pour travailler"
     }
   ],
   "temoignages_titre": "Témoignages",
