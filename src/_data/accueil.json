@@ -24,22 +24,17 @@
     }
   ],
   "agenda_titre": "Agenda",
-  "agenda_image": "assets/img/cours novembre.png",
   "agenda_lignes": [
     {
-      "texte": " Pour les cours de Novembre:",
       "souligne": true
     },
     {
-      "texte": "Il reste 1 place pour le 21 Novembre",
       "souligne": false
     },
     {
-      "texte": "Pour les cours de Décembre",
       "souligne": true
     },
     {
-      "texte": "Il reste 1 place pour le 5 et le 19 Décembre",
       "souligne": false
     }
   ],
