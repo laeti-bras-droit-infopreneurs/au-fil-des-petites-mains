@@ -21,6 +21,10 @@
       "titre": "COURS",
       "image": "assets/img/cours.jpg",
       "lien": "cours.html"
+    },
+    {
+      "titre": "Nouveauté à venir en 2027 !",
+      "image": "assets/img/1-2.png"
     }
   ],
   "agenda_titre": "Agenda",
