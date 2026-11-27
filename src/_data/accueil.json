@@ -23,11 +23,11 @@
       "lien": "cours.html"
     },
     {
-      "titre": "Nouveauté à venir en 2027 !",
-      "image": "assets/img/1-2.png"
+      "titre": "Nouveauté à venir en 2027 !"
     }
   ],
-  "agenda_titre": "Agenda",
+  "agenda_titre": "Agenda / nouveautés à venir sur 2027 !",
+  "agenda_image": "assets/img/1-3.png",
   "agenda_lignes": [
     {
       "texte": "Les prochains cours sur Décembre sont complets, nouvelles dates à venir sur 2027...",
